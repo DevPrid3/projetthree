@@ -1,0 +1,23 @@
+.description {
+    background-color: violet;
+    grid-column: center-start / center-end;
+    padding: 5rem 0 ;
+}
+
+.aboutme {
+    background-color: crimson;
+    grid-column: center-start / center-end;
+    padding: 3rem 0;
+}
+
+.blog {
+    background-color: royalblue;
+    grid-column: center-start / center-end;
+    padding: 15rem 0;
+}
+
+.portfolio {
+    background-color: palevioletred;
+    grid-column: center-start / center-end;
+    padding: 3rem 0;
+}

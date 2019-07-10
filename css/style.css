@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh min-content 60rem repeat(3, min-content);
+  grid-template-columns: [full-start] 10rem [center-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 10rem [full-end]; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #222; }
+
+.footer {
+  background-color: #F23524;
+  grid-column: full-start / full-end;
+  height: 35rem; }
+
+.header {
+  background-color: orangered;
+  grid-column: full-start / full-end; }
+
+.description {
+  background-color: violet;
+  grid-column: center-start / center-end;
+  padding: 5rem 0; }
+
+.aboutme {
+  background-color: crimson;
+  grid-column: center-start / center-end;
+  padding: 3rem 0; }
+
+.blog {
+  background-color: royalblue;
+  grid-column: center-start / center-end;
+  padding: 15rem 0; }
+
+.portfolio {
+  background-color: palevioletred;
+  grid-column: center-start / center-end;
+  padding: 3rem 0; }
