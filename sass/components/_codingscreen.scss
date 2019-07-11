@@ -1,0 +1,26 @@
+.codingscreen {
+    //border: $line;
+    background-color: #040608;
+    border-radius: .8rem;
+    color: $color-white-2;
+    position: relative;
+    //padding: 5rem 2rem;
+
+    &-date {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        font-size: 1.2rem;
+        color: $color-white-2;
+        font-weight: 700;
+    }
+
+    &-window {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.2rem;
+        color: $color-white-2;
+    }
+
+}

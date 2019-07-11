@@ -1,0 +1,72 @@
+.navigation {
+    //padding-top: 6rem;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    &__item {
+        list-style: none;
+        padding: 0 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-black-2;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-white-1;
+            padding: .2rem .4rem;
+            background-color: $color-black-2;
+            border-radius: .6rem;
+        }
+    }
+}
+
+.navigation__social{
+    display: block;
+    text-align: center;
+
+    &__link {
+        padding: 0 1rem;
+        font-size: 3rem;
+        color: $color-black-2;
+
+        & > i {
+            transition: all .3s;
+        }
+
+        & .fa-facebook:hover {
+            color: $color-facebook;
+        }
+
+        & .fa-instagram:hover {
+            color: $color-instagram;
+        }
+
+        & .fa-twitter-square:hover {
+            color: $color-twitter;
+        }
+
+        & .fa-discord:hover {
+            color: $color-discord;
+        }
+    }
+
+}
+
+.active {
+    color: $color-white-1;
+    padding: .2rem .4rem;
+    background-color: $color-black-2;
+    border-radius: .6rem;
+    font-weight: bold;
+}

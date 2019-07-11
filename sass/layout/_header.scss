@@ -1,4 +1,67 @@
 .header {
-    background-color: orangered;
+    background-color: $color-white-1;
     grid-column: full-start / full-end;
+    padding: 4rem;
+
+    //GRID HEADER
+    display: grid;
+    grid-template-rows: 1fr 10rem 1fr max-content;
+    grid-row-gap: 2rem;
+  
+    justify-items: center;
+    align-items: center;
+
+    &__title {
+
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        //display: block;
+        //text-align: center;
+
+        &__full {
+            //padding-top: 5rem;
+            font-size: 6rem;
+
+            &--partone {
+                color: $color-primary;
+            }
+
+            &--parttwo {
+                color: $color-white-1;
+                padding: 0px 1.1rem;
+                background-color: $color-black-2;
+                border-radius: 1.2rem;
+            }
+        }
+
+        > a {
+            text-decoration: none;
+        }
+    }
+
+    &__body {
+        display: block;
+        text-align: center;
+        width: 110rem;
+        margin: auto;
+    
+        & > h1 {
+            font-size: 4.5rem;
+            font-weight: bold;
+        }
+    
+        &__presentation {
+            padding: 2rem;
+            line-height: 1.7;
+            font-size: $default-font-size;
+        }
+    }
+
+    &__btn {
+        display: block;
+        text-align: center;
+    }
+
+
 }

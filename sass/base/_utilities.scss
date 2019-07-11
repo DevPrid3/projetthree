@@ -1,0 +1,58 @@
+.px-xs { padding: 0 .8rem; }
+.px-sm { padding: 0 1.5rem; }
+.px-md { padding: 0 2rem; }
+.px-lg { padding: 0 2.75rem; }
+.px-xl { padding: 0 3.5rem; }
+
+.py-xs { padding: .8rem 0; }
+.py-sm { padding: 1.5rem 0; }
+.py-md { padding: 2rem 0; }
+.py-lg { padding: 2.75rem 0; }
+.py-xl { padding: 3.5rem 0; }
+
+.my-xs { margin: .8rem 0; }
+.my-sm { margin: 1.5rem 0; }
+.my-md { margin: 2rem 0; }
+.my-lg { margin: 2.75rem 0; }
+.my-xl { margin: 3.5rem 0; }
+
+.pt-xs { padding-top: .8rem; }
+.pt-sm { padding-top: 1.5rem; }
+.pt-md { padding-top: 2rem; }
+.pt-lg { padding-top: 2.75rem; }
+.pt-xl { padding-top: 3.5rem; }
+
+.mb-xs { margin-bottom: .8rem; }
+.mb-sm { margin-bottom: 1.5rem; }
+.mb-md { margin-bottom: 2rem; }
+.mb-lg { margin-bottom: 2.75rem; }
+.mb-xl { margin-bottom: 3.5rem; }
+
+.mt-xs { margin-top: .8rem; }
+.mt-sm { margin-top: 1.5rem; }
+.mt-md { margin-top: 2rem; }
+.mt-lg { margin-top: 2.75rem; }
+.mt-xl { margin-top: 3.5rem; }
+
+
+.ta-l { text-align: right; }
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.abs-center-y {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.scale:hover {
+    transform : scale(1.2) translateY(15px);
+}
+
+
+
+

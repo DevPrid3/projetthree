@@ -1,0 +1,62 @@
+
+.btn {
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 1rem;
+        transition: all .2s;
+        position: relative;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    }
+
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+}
+    
+.btn-orange {
+    background-color: $color-primary;
+    color: $color-white-2;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.btn-up {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    border-radius: 50%;
+    background-color: rgba($color-red, 0.365);
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 5rem;
+    width: 5rem;
+    z-index: 5;
+    color: $color-white-1;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3.2;
+    transition: all .2s;
+    font-size: 1.6rem;
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        background-color: rgba($color-red, .702);
+    }
+
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        background-color: rgba($color-red, 0.8);
+    }
+}
