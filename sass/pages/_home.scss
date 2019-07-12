@@ -1,23 +1,104 @@
 .description {
-    background-color: violet;
-    grid-column: center-start / center-end;
-    padding: 5rem 0 ;
+    grid-column: full-start / full-end;
+    padding: 5rem 0;
+
+    background-image: linear-gradient(rgba(0,0,0, .9), rgba(0, 0, 0, .95)), url("/img/sebastian-bednarek-624108-unsplash.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+    
+
+    // justify-items: center;
+    // align-items: center;
+    //
+
+    &__heading {
+        display: block;
+        text-align: center;
+        // grid-row: 1 / 2;
+        // grid-column: 1 / -1;
+        // align-self: center;
+    }
+
+    &__box {
+    //GRID HEADER
+    display: grid;
+    grid-template-rows: 1fr 10rem 1fr max-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+    }
+
+    &__item {
+        text-align: center;
+
+        & i {
+            color: #eee;
+            font-size: 4rem;
+            padding-top: 1rem;
+            transition: all .3s;
+        }
+
+        & .fa-pencil-ruler {
+            color: rgba(185, 129, 92, .5);
+            font-size: 4rem;
+            padding-top: 1rem;
+
+            &:hover {
+                color: rgb(185, 129, 92);
+            }
+        }
+
+        & .fa-code {
+            color: rgba(12, 93, 168, .5);
+            font-size: 4rem;
+            padding-top: 1rem;
+
+            &:hover {
+                color: rgb(12, 93, 168);
+            }
+        }
+
+        & .fa-route {
+            color: rgba(27, 168, 74, .5);
+            font-size: 4rem;
+            padding-top: 1rem;
+
+            &:hover {
+                color: rgb(27, 168, 74);
+            }
+            
+        }
+
+        & h3 {
+            margin-top: 2rem;
+            color: #eee;
+            font-size: 2.8rem;
+        }
+
+        & p {
+            margin-top: 2rem;
+            color: #eee;
+            font-size: 1.6rem;
+        }
+    }
+
 }
 
 .aboutme {
     background-color: crimson;
-    grid-column: center-start / center-end;
+    grid-column: full-start / full-end;
     padding: 3rem 0;
 }
 
 .blog {
     background-color: royalblue;
-    grid-column: center-start / center-end;
+    grid-column: full-start / full-end;
     padding: 15rem 0;
 }
 
 .portfolio {
     background-color: palevioletred;
-    grid-column: center-start / center-end;
+    grid-column: full-start / full-end;
     padding: 3rem 0;
 }
