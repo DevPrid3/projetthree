@@ -4,3 +4,62 @@ body {
     line-height: 1.7;
     color: $color-black-2;
 }
+
+
+.heading-primary { /* H2 */
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #eee;
+    font-size: 5rem;
+    /* font-family: Montserrat,sans-serif; */
+
+    &--black {
+        text-transform: uppercase;
+        font-weight: 800;
+        color: $color-black-2 ;
+        font-size: 5rem;
+        /* font-family: Montserrat,sans-serif; */
+    }
+}
+
+.heading-secondary {
+    padding-top: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-gray;
+    font-size: 1.4rem;
+    letter-spacing: .6rem;
+    padding-bottom: 2rem;
+}
+
+.heading-tertiary {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-gray;
+    font-size: 1.4rem;
+    letter-spacing: .3rem;
+}
+
+.heading-paragraph {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-black-3;
+    font-size: 2.2rem;
+}
+
+.paragraph {
+    font-weight: 400;
+    color: $color-black-2;
+    font-size: 1.2rem;
+}
+
+.heading-subtitle {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.underline {
+    margin: 0 auto;
+    width: 70px;
+    background-color: red;
+}
