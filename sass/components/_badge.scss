@@ -1,0 +1,20 @@
+.badge {
+    position: absolute;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: .3rem 2.5rem;
+    border-radius: 4px;
+    z-index: 1;
+    right: -20px;
+
+    &-new {
+        background-color: $color-primary;
+        transform: rotate(45deg);
+    }
+
+    &-top {
+        background-color: gold;
+        transform: rotate(45deg);
+    }
+
+}

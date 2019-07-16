@@ -2,7 +2,7 @@
     grid-column: full-start / full-end;
     padding: 5rem 0;
 
-    background-image: linear-gradient(rgba(0,0,0, .9), rgba(0, 0, 0, .95)), url("/img/sebastian-bednarek-624108-unsplash.jpg");
+    background-image: linear-gradient(rgba(0,0,0, .8), rgba(0, 0, 0, .9)), url("/img/sebastian-bednarek-624108-unsplash.jpg");
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
@@ -32,18 +32,6 @@
         grid-template-rows: repeat(3, min-content);
         justify-items: center;
         text-align: center;
-
-        &--1 {
-
-        }
-
-        &--2 {
-            
-        }
-
-        &--3 {
-            
-        }
 
         & i {
             color: #eee;
@@ -99,19 +87,80 @@
 }
 
 .aboutme {
-    background-color: crimson;
+    background-color:$color-white-1;
     grid-column: full-start / full-end;
     padding: 3rem 0;
+
+    &__heading {
+        display: block;
+        text-align: center;
+    }
+
+    &__container {
+        position: relative;
+        margin : 1rem auto;  
+        padding: 1rem;
+        width: 70%;
+        height: 80%;
+        background-color: $color-white-1;
+        box-shadow: 10px 10px 48px -20px rgba($color-black,0.75);
+        text-align: center;
+    }
+
+    &__item {
+        margin-top: 1rem;
+
+        &--comp {
+            color: $color-black-1;
+        }
+
+    }
 }
 
 .blog {
-    background-color: royalblue;
     grid-column: full-start / full-end;
     padding: 15rem 0;
+    position: relative;
+
+    &__background-image {
+        // background-image: url("");
+        background-color: rgb(10, 10, 10);
+        // background-size: cover;
+        // background-position: top;
+        // background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    &__heading{
+        position: absolute;
+        top: 10rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: Montserrat,sans-serif;
+    }
+    
+    &__flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        // height: 100%;
+        padding: 0 20rem;
+    }
 }
 
 .portfolio {
-    background-color: palevioletred;
+    background-color: #eee;
     grid-column: full-start / full-end;
     padding: 3rem 0;
+    
+    &__heading {
+        display: block;
+        text-align: center;
+    }
 }
