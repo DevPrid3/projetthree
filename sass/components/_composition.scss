@@ -1,6 +1,5 @@
 .composition{
     position: relative;
-
     @include clearfix;
 
     &__photo {
@@ -11,46 +10,6 @@
         z-index: 10;
         transition: all .2s;
         outline-offset: 2rem;
-
-        &--p1-left {
-            left: 50%;
-            top: -2rem;
-        }
-
-        &--p1-right {
-            right: 50%;
-            top: -2rem;
-        }
-
-        &--p2-left {
-            right: 30%;
-            top: 3rem;
-        }
-
-        &--p2-right {
-            left: 30%;
-            top: 3rem;
-        }
-
-        &--p3-left {
-            left: 80%;
-            top: 3rem;
-        }
-
-        &--p3-right {
-            right: 80%;
-            top: 3rem;
-        }
-
-        &--p4-left {
-            right: 0;
-            top: 10rem;
-        }
-
-        &--p4-right {
-            left: 0;
-            top: 10rem;
-        }
 
         &:hover {
             // outline: 2rem solid $color-primary;
