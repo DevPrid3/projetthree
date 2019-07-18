@@ -158,14 +158,6 @@
     background-color: #eee;
     grid-column: full-start / full-end;
     padding: 3rem 0;
-
-    &__composition {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-gap: 1.5rem;
-        padding: 2.5rem;
-    }
     
     &__heading {
         display: block;
