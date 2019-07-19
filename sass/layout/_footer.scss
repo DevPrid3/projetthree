@@ -1,5 +1,14 @@
 .footer {
     background-color: $color-primary-dark-1;
     grid-column: full-start / full-end;
-    height: 35rem;
+    padding: 5rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: $color-black-2;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
 }

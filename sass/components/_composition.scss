@@ -6,6 +6,14 @@
     padding: 2.5rem 10rem;
 
     &__draw {
+
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 8;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 5vw);
+        grid-gap: 1.5rem;
         
         &--1{
             grid-row: 7 / span 1;
@@ -42,7 +50,7 @@
             grid-column: 3 / span 2;
         }
 
-        &--16 {
+        &--8 {
             grid-row: 1 / span 2;
             grid-column: 1 / span 2;
             justify-self: center;
@@ -56,44 +64,53 @@
 
     &__project {
 
+        grid-column: 5 / span 4;
+        grid-row: 1 / span 8;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 5vw);
+        grid-gap: 1.5rem;
+
+        &--1 {
+            grid-row: 3 / span 2;
+            grid-column: 3 / span 1;
+        }
+
+        &--2 {
+            grid-row: 3 / span 3;
+            grid-column: 4 / span 1;
+        }
+
+        &--3 {
+            grid-row: 1 / span 2;
+            grid-column: 2 / span 1;
+        }
+
+        &--4 {
+            grid-row: 1 / span 2;
+            grid-column: 3 / span 2;
+        }
+
+        &--5 {
+            grid-row: 1 / span 2;
+            grid-column: 1 / span 1;
+        }
+
+        &--6 {
+            grid-row: 5 / span 3;
+            grid-column: 1 / span 3;
+            position: relative;
+        }
+
+        &--7 {
+            grid-row:6 / span 2;
+            grid-column: 4 / span 1;
+        }
+
         &--8 {
             grid-row: 3 / span 2;
-            grid-column: 7 / span 1;
-        }
-
-        &--9 {
-            grid-row: 3 / span 3;
-            grid-column: 8 / span 1;
-        }
-
-        &--10 {
-            grid-row: 1 / span 2;
-            grid-column: 6 / span 1;
-        }
-
-        &--11 {
-            grid-row: 1 / span 2;
-            grid-column: 7 / span 2;
-        }
-
-        &--12 {
-            grid-row: 1 / span 2;
-            grid-column: 5 / span 1;
-        }
-
-        &--13 {
-            grid-row: 5 / span 3;
-            grid-column: 5 / span 3;
-        }
-
-        &--14 {
-            grid-row:6 / span 2;
-            grid-column: 8 / span 1;
-        }
-
-        &--15 {
-            grid-row: 3 / span 2;
-            grid-column: 5 / span 2;
+            grid-column: 1 / span 2;
             justify-self: center;
             align-self: center;
             
@@ -129,7 +146,28 @@
         }
     }
     
-    &:hover &__draw &__img:not(:hover) {
+    &__draw:hover &__img:not(:hover) {
         transform: scale(.95); 
     }
+
+    &__project:hover &__img:not(:hover) {
+        transform: scale(.95); 
+    }
+
+    // &__link {
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    //     z-index: 15;
+    //     text-decoration: none;
+    //     color: $color-black-2;
+    //     transition: all .2s;
+
+    //     &:hover {
+    //         color: $color-white-1;
+    //         padding: .2rem .4rem;
+    //         background-color: $color-black-2;
+    //         border-radius: .6rem;
+    //     }
+    // }
 }
