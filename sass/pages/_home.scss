@@ -119,31 +119,12 @@
 
 .blog {
     grid-column: full-start / full-end;
-    padding: 10rem 0;
-    position: relative;
-
-    &__background-image {
-        // background-image: url("");
-        background-color: rgb(10, 10, 10);
-        // background-size: cover;
-        // background-position: top;
-        // background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        
-    }
+    padding: 3rem 0;
+    background-color: $color-black-1;
     
     &__heading{
-        position: absolute;
-        top: 10rem;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        display: block;
         text-align: center;
-        font-family: Montserrat,sans-serif;
-        margin-bottom: 5rem;
     }
     
     &__flex-container {
@@ -157,7 +138,7 @@
 
     &__btn {
         text-align: center;
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
 }
 
