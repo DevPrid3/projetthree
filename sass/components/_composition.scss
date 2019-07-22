@@ -100,7 +100,6 @@
         &--6 {
             grid-row: 5 / span 3;
             grid-column: 1 / span 3;
-            position: relative;
         }
 
         &--7 {
@@ -133,16 +132,13 @@
         z-index: 10;
         transition: all .2s;
         outline-offset: 2rem;
+        backface-visibility: hidden;
 
         &:hover {
             // outline: 2rem solid $color-primary;
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
-    
-            // &::after {
-            //     background-color: rgba($color-black, .5);
-            // }
         }
     }
     
@@ -152,22 +148,10 @@
 
     &__project:hover &__img:not(:hover) {
         transform: scale(.95); 
+
     }
+}
 
-    // &__link {
-    //     position: absolute;
-    //     left: 0;
-    //     top: 0;
-    //     z-index: 15;
-    //     text-decoration: none;
-    //     color: $color-black-2;
-    //     transition: all .2s;
-
-    //     &:hover {
-    //         color: $color-white-1;
-    //         padding: .2rem .4rem;
-    //         background-color: $color-black-2;
-    //         border-radius: .6rem;
-    //     }
-    // }
+.portfolio__btn {
+    text-align: center;
 }

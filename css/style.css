@@ -438,8 +438,7 @@ body {
       grid-column: 1 / span 1; }
     .portfolio__composition__project--6 {
       grid-row: 5 / span 3;
-      grid-column: 1 / span 3;
-      position: relative; }
+      grid-column: 1 / span 3; }
     .portfolio__composition__project--7 {
       grid-row: 6 / span 2;
       grid-column: 4 / span 1; }
@@ -461,7 +460,8 @@ body {
     border-radius: 5px;
     z-index: 10;
     transition: all .2s;
-    outline-offset: 2rem; }
+    outline-offset: 2rem;
+    backface-visibility: hidden; }
     .portfolio__composition__img:hover {
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
@@ -470,6 +470,9 @@ body {
     transform: scale(0.95); }
   .portfolio__composition__project:hover .portfolio__composition__img:not(:hover) {
     transform: scale(0.95); }
+
+.portfolio__btn {
+  text-align: center; }
 
 .navigation__list {
   display: flex;
@@ -753,7 +756,7 @@ body {
 
 .blog {
   grid-column: full-start / full-end;
-  padding: 15rem 0;
+  padding: 10rem 0;
   position: relative; }
   .blog__background-image {
     background-color: #0a0a0a;
@@ -768,13 +771,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: Montserrat,sans-serif; }
+    font-family: Montserrat,sans-serif;
+    margin-bottom: 5rem; }
   .blog__flex-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
     padding: 0 20rem; }
+  .blog__btn {
+    text-align: center;
+    margin-top: 10rem; }
 
 .portfolio {
   background-color: #eee;

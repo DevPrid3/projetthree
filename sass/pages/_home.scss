@@ -119,7 +119,7 @@
 
 .blog {
     grid-column: full-start / full-end;
-    padding: 15rem 0;
+    padding: 10rem 0;
     position: relative;
 
     &__background-image {
@@ -133,6 +133,7 @@
         left: 0;
         height: 100%;
         width: 100%;
+        
     }
     
     &__heading{
@@ -142,6 +143,7 @@
         transform: translate(-50%, -50%);
         text-align: center;
         font-family: Montserrat,sans-serif;
+        margin-bottom: 5rem;
     }
     
     &__flex-container {
@@ -151,6 +153,11 @@
         flex-wrap: nowrap;
         // height: 100%;
         padding: 0 20rem;
+    }
+
+    &__btn {
+        text-align: center;
+        margin-top: 10rem;
     }
 }
 
