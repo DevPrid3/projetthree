@@ -120,7 +120,6 @@
                 border-radius: 1.2rem;
             }
         }
-
     }
 
     &__img {
@@ -133,6 +132,7 @@
         transition: all .2s;
         outline-offset: 2rem;
         backface-visibility: hidden;
+        cursor: pointer;
 
         &:hover {
             // outline: 2rem solid $color-primary;
@@ -150,8 +150,4 @@
         transform: scale(.95); 
 
     }
-}
-
-.portfolio__btn {
-    text-align: center;
 }
