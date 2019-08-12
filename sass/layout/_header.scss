@@ -60,3 +60,50 @@
     //     text-align: center;
     // }
 }
+
+.header-page {
+    background-color: $color-white-1;
+    grid-column: full-start / full-end;
+    padding: 2rem;
+
+    //GRID HEADER
+    display: grid;
+    grid-template-rows: 10rem;
+    grid-template-columns: 20rem 1fr;
+    justify-items: center;
+    align-items: center;
+    //
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        line-height: 1.2;
+        grid-row: 1 / 1;
+        
+        //display: block;
+        //text-align: center;
+
+        &__full {
+            font-size: 3.5rem;
+            width: auto;
+            text-align: center;
+            justify-self: flex-start;
+
+            &--partone {
+                color: $color-primary;
+            }
+
+            &--parttwo {
+                color: $color-white-1;
+                padding: 0px 1.1rem;
+                background-color: $color-black-2;
+                border-radius: 1.2rem;
+            }
+        }
+
+        > a {
+            text-decoration: none;
+        }
+    }
+}
