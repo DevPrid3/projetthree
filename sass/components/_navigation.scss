@@ -35,21 +35,22 @@
     //padding-top: 6rem;
     grid-row: 1 / 1;
     grid-column: 2 / span 1;
+    align-self: center;
 
     &__list {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.4rem;
-        font-weight: 500;
-        letter-spacing: 0.25rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 0.20rem;
         text-transform: uppercase;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     }
 
     &__item {
         list-style: none;
-        padding: 0 2rem;
+        padding: 0 1.5rem;
     }
 
     &__link {

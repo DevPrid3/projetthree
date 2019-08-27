@@ -64,14 +64,14 @@
 .header-page {
     background-color: $color-white-1;
     grid-column: full-start / full-end;
-    padding: 2rem;
+    padding: 1rem;
 
     //GRID HEADER
     display: grid;
     grid-template-rows: 10rem;
     grid-template-columns: 20rem 1fr;
-    justify-items: center;
-    align-items: center;
+    // justify-items: center;
+    // align-items: center;
     //
 
     &__title {
@@ -85,7 +85,7 @@
         //text-align: center;
 
         &__full {
-            font-size: 3.5rem;
+            font-size: 3rem;
             width: auto;
             text-align: center;
             justify-self: flex-start;

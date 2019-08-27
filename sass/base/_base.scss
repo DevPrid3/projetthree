@@ -22,6 +22,6 @@ body {
 
 .container-page {
     display: grid;
-    grid-template-rows: 15vh repeat(2, max-content); 
+    grid-template-rows: 10rem repeat(2, max-content); 
     grid-template-columns: [full-start] 10rem [center-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end] ) [center-end] 10rem [full-end];
 }
