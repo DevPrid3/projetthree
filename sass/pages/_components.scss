@@ -1,0 +1,13 @@
+.container-toolbox {
+    background-color: $color-white-2;
+    grid-column: full-start / full-end;
+    padding: 2rem 0;
+
+    &__composition {
+
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 2rem;
+    }
+}
