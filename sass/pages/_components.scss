@@ -1,13 +1,31 @@
-.container-toolbox {
+.container-components {
     background-color: $color-white-2;
     grid-column: full-start / full-end;
     padding: 2rem 0;
 
-    &__composition {
+    &__buttons {
 
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-gap: 2rem;
+        width: 1140px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        // display: grid;
+        // grid-template-columns: repeat(8, minmax(min-content, 1fr));
+        // grid-template-rows: repeat(5, minmax(min-content, 1fr));
+        // grid-gap: 1rem;
+
+        // justify-items: center;
+        // align-items: center;
+    }
+}
+
+.components {
+
+    &__heading {
+        display: block;
+        text-align: center;
     }
 }

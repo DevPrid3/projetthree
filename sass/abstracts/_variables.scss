@@ -6,12 +6,11 @@ $drawcode : "drawcode";
 // ***********COLOR*********** //
 
 // ORANGE //
-
-$color-primary: #F23F24; //#FF3826
 $color-primary-light: #FF4A26;
 $color-primary-light-1: #F24624;
-$color-primary-dark: #FF3826;
-$color-primary-dark-1: #F23524;
+$color-primary: #F23F24; //#FF3826
+$color-primary-dark: #f53321;
+$color-primary-dark-1: #f02e1c;
 
 // WHITE - BLACK //
 
@@ -48,6 +47,10 @@ $color-discord : #7289DA;
 // ***********FONT-SIZE*********** //
 
 $default-font-size: 1.6rem;
+$font-size-tiny: 0.5rem;
+$font-size-small: 1rem;
+$font-size-big: 1.5rem;
+$font-size-huge: 2rem;
 
 // ***********SCREEN*********** //
 
