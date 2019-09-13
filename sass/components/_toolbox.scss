@@ -11,6 +11,9 @@
     letter-spacing: 1px;
     border-radius: 1.5rem;
     border: 1px solid $color-primary;
+    cursor: pointer;
+
+    // Pour la presentation sur le site, à enlever
     margin: .5rem;
 
     &:link,
@@ -22,13 +25,92 @@
         position: relative;
     }
 
-    &--orange {
+    &--default {
         background-color: $color-primary-light;
-        color: $color-white-3;
+        color: $color-white-2;
         letter-spacing: 1px;
 
         &:hover {
             background-color: $color-primary-dark-1;
+            color: inherit;
+        }
+    }
+
+    &--primary {
+        background-color: #3aced3;
+        border-color: #3aced3;
+        color: #fff;
+        opacity: 1;
+        
+        &:hover {
+            background-color: #2db0b4;
+            color: #fff;
+            border-color: #2db0b4;
+        }
+    }
+    
+    &--info {
+        background-color: #51bcda;;
+        border-color: #51bcda;;
+        color: #fff;
+        opacity: 1;
+        
+        &:hover {
+            background-color: #2ba9cd;
+            color: #fff;
+            border-color: #2ba9cd;
+        }
+    }
+
+    &--success {
+        background-color: #6bd098;;
+        border-color: #6bd098;;
+        color: #fff;
+        opacity: 1;
+        
+        &:hover {
+            background-color: #44c47d;
+            color: #fff;
+            border-color: #44c47d;
+        }
+    }
+
+    &--warning {
+        background-color: #fbc658;;
+        border-color: #fbc658;;
+        color: #fff;
+        opacity: 1;
+        
+        &:hover {
+            background-color: #fab526;
+            color: #fff;
+            border-color: #fab526;
+        }
+    }
+
+    &--danger {
+        background-color: #f5593d;;
+        border-color: #f5593d;;
+        color: #fff;
+        opacity: 1;
+        
+        &:hover {
+            background-color: #f33816;
+            color: #fff;
+            border-color: #f33816;
+        }
+    }
+
+    &--neutral {
+        background-color: #fff;;
+        border-color: #fff;;
+        color: #66615b;;
+        opacity: 1;
+        
+        &:hover {
+            background-color: #fff;
+            color: #403d39 ;
+            border-color: #fff;
         }
     }
 

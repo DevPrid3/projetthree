@@ -784,6 +784,7 @@ body {
   letter-spacing: 1px;
   border-radius: 1.5rem;
   border: 1px solid #F23F24;
+  cursor: pointer;
   margin: .5rem;
   /***** SIZE *****/ }
   .tbtn:link, .tbtn:visited {
@@ -791,12 +792,67 @@ body {
     text-decoration: none;
     transition: all .2s;
     position: relative; }
-  .tbtn--orange {
+  .tbtn--default {
     background-color: #FF4A26;
-    color: #ddd;
+    color: #f7f7f7;
     letter-spacing: 1px; }
-    .tbtn--orange:hover {
-      background-color: #f02e1c; }
+    .tbtn--default:hover {
+      background-color: #f02e1c;
+      color: inherit; }
+  .tbtn--primary {
+    background-color: #3aced3;
+    border-color: #3aced3;
+    color: #fff;
+    opacity: 1; }
+    .tbtn--primary:hover {
+      background-color: #2db0b4;
+      color: #fff;
+      border-color: #2db0b4; }
+  .tbtn--info {
+    background-color: #51bcda;
+    border-color: #51bcda;
+    color: #fff;
+    opacity: 1; }
+    .tbtn--info:hover {
+      background-color: #2ba9cd;
+      color: #fff;
+      border-color: #2ba9cd; }
+  .tbtn--success {
+    background-color: #6bd098;
+    border-color: #6bd098;
+    color: #fff;
+    opacity: 1; }
+    .tbtn--success:hover {
+      background-color: #44c47d;
+      color: #fff;
+      border-color: #44c47d; }
+  .tbtn--warning {
+    background-color: #fbc658;
+    border-color: #fbc658;
+    color: #fff;
+    opacity: 1; }
+    .tbtn--warning:hover {
+      background-color: #fab526;
+      color: #fff;
+      border-color: #fab526; }
+  .tbtn--danger {
+    background-color: #f5593d;
+    border-color: #f5593d;
+    color: #fff;
+    opacity: 1; }
+    .tbtn--danger:hover {
+      background-color: #f33816;
+      color: #fff;
+      border-color: #f33816; }
+  .tbtn--neutral {
+    background-color: #fff;
+    border-color: #fff;
+    color: #66615b;
+    opacity: 1; }
+    .tbtn--neutral:hover {
+      background-color: #fff;
+      color: #403d39;
+      border-color: #fff; }
   .tbtn--tiny {
     line-height: 1;
     font-size: 0.5rem;
@@ -818,7 +874,7 @@ body {
   padding: 2rem 0; }
   .container-components__buttons {
     width: 1140px;
-    margin: 0 auto;
+    margin: 1rem auto;
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
