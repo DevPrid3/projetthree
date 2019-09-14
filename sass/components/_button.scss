@@ -35,7 +35,7 @@
     bottom: 5rem;
     right: 5rem;
     border-radius: 50%;
-    background-color: rgba($color-red, 0.365);
+    background-color: rgba($color-primary-dark-1, 0.365);
     text-transform: uppercase;
     text-decoration: none;
     height: 5rem;
@@ -51,12 +51,12 @@
     &:hover {
         transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
-        background-color: rgba($color-red, .702);
+        background-color: rgba($color-primary-dark-1, .702);
     }
 
     &:active {
         transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
-        background-color: rgba($color-red, 0.8);
+        background-color: rgba($color-primary-dark-1, 0.8);
     }
 }

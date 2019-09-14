@@ -1,119 +1,609 @@
 .tbtn {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: $font-raleway;
+    font-weight: $font-weigth-700;
     line-height: 1.7;
-    font-size: 1.2rem;
+    font-size: $font-size-small;
     display: inline-block;
     text-align: center;
     padding: .8rem 2rem;
-    background-color: $color-white-1;
-    color: $color-black-2;
+    background-color: $color-primary-light;
+    color: $color-white-2;
     letter-spacing: 1px;
     border-radius: 1.5rem;
-    border: 1px solid $color-primary;
     cursor: pointer;
 
     // Pour la presentation sur le site, à enlever
     margin: .5rem;
 
+    &:hover {
+        background-color: $color-primary-dark-1;
+        color: $color-white-1;
+    }
+
     &:link,
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        
         transition: all .2s;
         position: relative;
     }
 
     &--default {
-        background-color: $color-primary-light;
-        color: $color-white-2;
+        background-color: $color-gray;
+        color: $color-white;
         letter-spacing: 1px;
+        border: 2px solid  $color-gray;
 
         &:hover {
-            background-color: $color-primary-dark-1;
-            color: inherit;
+            background-color: $color-black-3;
+            border: 2px solid  $color-black-3;
         }
+    }
+
+    &-outline--default {
+        background-color: $color-white-1;
+        color:  $color-gray;
+        letter-spacing: 1px;
+        border: 2px solid  $color-gray;
+
+        &:hover {
+            background-color: $color-gray;
+            color: $color-white-1;
+        } 
     }
 
     &--primary {
-        background-color: #3aced3;
-        border-color: #3aced3;
-        color: #fff;
-        opacity: 1;
+        background-color: $color-prim;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-prim;
         
         &:hover {
-            background-color: #2db0b4;
-            color: #fff;
-            border-color: #2db0b4;
+            background-color: $color-prim-dark;
+            border-color: $color-prim-dark;
         }
+    }
+
+    &-outline--primary {
+        background-color: $color-white-1;
+        color:  $color-prim;
+        letter-spacing: 1px;
+        border: 2px solid  $color-prim;
+
+        &:hover {
+            background-color: $color-prim;
+            color: $color-white-1;
+        } 
     }
     
     &--info {
-        background-color: #51bcda;;
-        border-color: #51bcda;;
-        color: #fff;
-        opacity: 1;
+        background-color: $color-info;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-info;
         
         &:hover {
-            background-color: #2ba9cd;
-            color: #fff;
-            border-color: #2ba9cd;
+            background-color: $color-info-dark;
+            border-color: $color-info-dark;
         }
+    }
+
+    &-outline--info {
+        background-color: $color-white-1;
+        color:  $color-info;
+        letter-spacing: 1px;
+        border: 2px solid  $color-info;
+
+        &:hover {
+            background-color: $color-info;
+            color: $color-white-1;
+        } 
     }
 
     &--success {
-        background-color: #6bd098;;
-        border-color: #6bd098;;
-        color: #fff;
-        opacity: 1;
+        background-color: $color-success;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-success;
         
         &:hover {
-            background-color: #44c47d;
-            color: #fff;
-            border-color: #44c47d;
+            background-color: $color-success-dark;
+            border-color: $color-success-dark;
         }
+    }
+
+    &-outline--success {
+        background-color: $color-white-1;
+        color:  $color-success;
+        letter-spacing: 1px;
+        border: 2px solid  $color-success;
+
+        &:hover {
+            background-color: $color-success;
+            color: $color-white-1;
+        } 
     }
 
     &--warning {
-        background-color: #fbc658;;
-        border-color: #fbc658;;
-        color: #fff;
-        opacity: 1;
+        background-color: $color-warning;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid $color-warning;
         
         &:hover {
-            background-color: #fab526;
-            color: #fff;
-            border-color: #fab526;
+            background-color: $color-warning-dark;
+            border-color: $color-warning-dark;
         }
+    }
+
+    &-outline--warning {
+        background-color: $color-white-1;
+        color:  $color-warning;
+        letter-spacing: 1px;
+        border: 2px solid  $color-warning;
+
+        &:hover {
+            background-color: $color-warning;
+            color: $color-white-1;
+        } 
     }
 
     &--danger {
-        background-color: #f5593d;;
-        border-color: #f5593d;;
-        color: #fff;
-        opacity: 1;
+        background-color: $color-danger;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-danger;
         
         &:hover {
-            background-color: #f33816;
-            color: #fff;
-            border-color: #f33816;
+            background-color: $color-danger-dark;
+            border-color: $color-danger-dark;
         }
+    }
+
+    &-outline--danger {
+        background-color: $color-white-1;
+        color:  $color-danger;
+        letter-spacing: 1px;
+        border: 2px solid  $color-danger;
+
+        &:hover {
+            background-color: $color-danger;
+            color: $color-white-1;
+        } 
     }
 
     &--neutral {
-        background-color: #fff;;
-        border-color: #fff;;
-        color: #66615b;;
-        opacity: 1;
+        background-color: $color-white;
+        color: $color-neutral;
+        letter-spacing: 1px;
+        border: 2px solid  $color-white;
         
         &:hover {
-            background-color: #fff;
-            color: #403d39 ;
-            border-color: #fff;
+            background-color: $color-white;
+            color: $color-neutral-dark;
+            border-color: $color-white;
         }
     }
 
+    /****** EXTRA *******/
+
+    &--red {
+        background-color: $color-red;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-red;
+
+        &:hover {
+            background-color: $color-red-dark;
+            border: 2px solid  $color-red-dark;
+        }
+    }
+
+    &-outline--red {
+        background-color: $color-white-1;
+        color:  $color-red;
+        letter-spacing: 1px;
+        border: 2px solid  $color-red;
+
+        &:hover {
+            background-color: $color-red;
+            color: $color-white-1;
+        } 
+    }
+
+    &--orange {
+        background-color: $color-orange;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-orange;
+
+        &:hover {
+            background-color: $color-orange-dark;
+            border: 2px solid  $color-orange-dark;
+        }
+    }
+
+    &-outline--orange {
+        background-color: $color-white-1;
+        color:  $color-orange;
+        letter-spacing: 1px;
+        border: 2px solid  $color-orange;
+
+        &:hover {
+            background-color: $color-orange;
+            color: $color-white-1;
+        } 
+    }
+
+    &--yellow {
+        background-color: $color-yellow;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-yellow;
+
+        &:hover {
+            background-color: $color-yellow-dark;
+            border: 2px solid  $color-yellow-dark;
+        }
+    }
+
+    &-outline--yellow {
+        background-color: $color-white-1;
+        color:  $color-yellow;
+        letter-spacing: 1px;
+        border: 2px solid  $color-yellow;
+
+        &:hover {
+            background-color: $color-yellow;
+            color: $color-white-1;
+        } 
+    }
+
+    &--emerald {
+        background-color: $color-emerald;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-emerald;
+
+        &:hover {
+            background-color: $color-emerald-dark;
+            border: 2px solid  $color-emerald-dark;
+        }
+    }
+
+    &-outline--emerald {
+        background-color: $color-white-1;
+        color:  $color-emerald;
+        letter-spacing: 1px;
+        border: 2px solid  $color-emerald;
+
+        &:hover {
+            background-color: $color-emerald;
+            color: $color-white-1;
+        } 
+    }
+
+    &--turquoise {
+        background-color: $color-turquoise;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-turquoise;
+
+        &:hover {
+            background-color: $color-turquoise-dark;
+            border: 2px solid  $color-turquoise-dark;
+        }
+    }
+
+    &-outline--turquoise {
+        background-color: $color-white-1;
+        color:  $color-turquoise;
+        letter-spacing: 1px;
+        border: 2px solid  $color-turquoise;
+
+        &:hover {
+            background-color: $color-turquoise;
+            color: $color-white-1;
+        } 
+    }
+
+    &--blue {
+        background-color: $color-blue;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-blue;
+
+        &:hover {
+            background-color: $color-blue-dark;
+            border: 2px solid  $color-blue-dark;
+        }
+    }
+
+    &-outline--blue {
+        background-color: $color-white-1;
+        color:  $color-blue;
+        letter-spacing: 1px;
+        border: 2px solid  $color-blue;
+
+        &:hover {
+            background-color: $color-blue;
+            color: $color-white-1;
+        } 
+    }
+
+    &--amethyst {
+        background-color: $color-amethyst;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-amethyst;
+
+        &:hover {
+            background-color: $color-amethyst-dark;
+            border: 2px solid  $color-amethyst-dark;
+        }
+    }
+
+    &-outline--amethyst {
+        background-color: $color-white-1;
+        color:  $color-amethyst;
+        letter-spacing: 1px;
+        border: 2px solid  $color-amethyst;
+
+        &:hover {
+            background-color: $color-amethyst;
+            color: $color-white-1;
+        } 
+    }
+
+    &--midnight {
+        background-color: $color-midnight;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-midnight;
+
+        &:hover {
+            background-color: $color-midnight-dark;
+            border: 2px solid  $color-midnight-dark;
+        }
+    }
+
+    &-outline--midnight {
+        background-color: $color-white-1;
+        color:  $color-midnight;
+        letter-spacing: 1px;
+        border: 2px solid  $color-midnight;
+
+        &:hover {
+            background-color: $color-midnight;
+            color: $color-white-1;
+        } 
+    }
+
+    &--silver {
+        background-color: $color-silver;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-silver;
+
+        &:hover {
+            background-color: $color-silver-dark;
+            border: 2px solid  $color-silver-dark;
+        }
+    }
+
+    &-outline--silver {
+        background-color: $color-white-1;
+        color:  $color-silver;
+        letter-spacing: 1px;
+        border: 2px solid  $color-silver;
+
+        &:hover {
+            background-color: $color-silver;
+            color: $color-white-1;
+        } 
+    }
+
+    &--grey {
+        background-color: $color-grey;
+        color: $color-white;
+        letter-spacing: 1px;
+        border: 2px solid  $color-grey;
+
+        &:hover {
+            background-color: $color-grey-dark;
+            border: 2px solid  $color-grey-dark;
+        }
+    }
+
+    &-outline--grey {
+        background-color: $color-white-1;
+        color:  $color-grey;
+        letter-spacing: 1px;
+        border: 2px solid  $color-grey;
+
+        &:hover {
+            background-color: $color-grey;
+            color: $color-white-1;
+        } 
+    }
+
+    &-link{
+        padding: 7px 18px;
+
+        &--default {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-gray;
+
+            &:hover {
+                color: $color-black-3;
+            }
+        }
+
+        &--primary {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-prim;
+            
+            &:hover {
+                color: $color-prim-dark;
+            }
+        }
+
+        &--info {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-info;
+            
+            &:hover {
+                color: $color-info-dark;
+            }
+        }
+
+        &--success {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-success;
+            
+            &:hover {
+                color: $color-success-dark;
+            }
+        }
+
+        &--warning {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-warning;
+
+            &:hover {
+                color: $color-warning-dark;
+            }
+        }
+
+        &--danger {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-danger;
+
+            &:hover {
+                color: $color-danger-dark;
+            }
+        }
+        
+        &--neutral {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-neutral;
+            
+            &:hover {
+                color: $color-neutral-dark;
+            }
+        }
+
+        // EXTRA
+
+        &--red {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-red;
+
+            &:hover {
+                color: $color-red-dark;
+            }
+        }
+
+        &--orange {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-orange;
+
+            &:hover {
+                color: $color-orange-dark;
+            }
+        }
+
+        &--yellow {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-yellow;
+
+            &:hover {
+                color: $color-yellow-dark;
+            }
+        }
+
+        &--emerald {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-emerald;
+
+            &:hover {
+                color: $color-emerald-dark;
+            }
+        }
+
+        &--turquoise {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-turquoise;
+
+            &:hover {
+                color: $color-turquoise-dark;
+            }
+        }
+
+        &--blue {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-blue;
+
+            &:hover {
+                color: $color-blue-dark;
+            }
+        }
+
+        &--amethyst {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-amethyst;
+
+            &:hover {
+                color: $color-amethyst-dark;
+            }
+        }
+
+        &--midnight {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-midnight;
+
+            &:hover {
+                color: $color-midnight-dark;
+            }
+        }
+
+        &--silver {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-silver;
+
+            &:hover {
+                color: $color-silver-dark;
+            }
+        }
+
+        &--grey {
+            border-color: transparent!important;
+            background-color: transparent!important;
+            color: $color-grey;
+
+            &:hover {
+                color: $color-grey-dark;
+            }
+        }
+
+    }
+    
     /***** SIZE *****/
 
     &--tiny {

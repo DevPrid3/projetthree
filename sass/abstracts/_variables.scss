@@ -1,27 +1,20 @@
+// Table of content
+//
+// 1. Color
+// 2. Font
+// 3. Screen
 
-// ************NOMBLOG**************//
-
-$drawcode : "drawcode";
 
 // ***********COLOR*********** //
 
 // ORANGE //
+$color-primary: #F23F24; 
 $color-primary-light: #FF4A26;
 $color-primary-light-1: #F24624;
-$color-primary: #F23F24; //#FF3826
 $color-primary-dark: #f53321;
 $color-primary-dark-1: #f02e1c;
 
-// WHITE - BLACK //
-
-$color-white-alt: #F8F9F0;
-$color-white-alt-2: #F8F9F1;
-
-$color-black-alt: #2A2E30;
-$color-black-alt-1: #171A1B;
-
-$color-gray-1: #66615b;
-
+// WHITE - GRAY - BLACK //
 
 $color-white :#fff;
 $color-white-1 :#fcfcfc;
@@ -31,28 +24,87 @@ $color-black : #000;
 $color-black-1 : #111;
 $color-black-2 : #222;
 $color-black-3 : #333;
-$color-gray: #777;
+$color-gray: #3b3b3b;
+$color-gray-1: #4b4b4b;
+$color-gray-2: #5b5b5b;
+$color-gray-3: #6b6b6b;
 
-// BTN-UP
-
-$color-red : #ff0000;
-
-// SOCIAL
+// SOCIAL COLOR //
 
 $color-facebook : #3B5998;
 $color-instagram : #C32AA3;
 $color-twitter : #1da1f2;
 $color-discord : #7289DA;
 
-// SECTION
+// COLOR BOOTSTRAP //
 
-// ***********FONT-SIZE*********** //
+$color-prim: #2485e0;
+$color-prim-dark: #116cc2;
+
+$color-info: #2fb5da;
+$color-info-dark: #20a4c9;
+
+$color-success: #16c98d;
+$color-success-dark: #07b67b;
+
+$color-warning: #fadc55;
+$color-warning-dark: #f7d335;
+
+$color-danger: #fa5e5b;
+$color-danger-dark: #f74744;
+
+$color-neutral: #66615b;
+$color-neutral-dark: #403d39;
+
+// OTHER COLOR // 
+
+$color-red: #E74C3C;
+$color-red-dark: #C0392B;
+
+$color-orange: #fc7f2d;
+$color-orange-dark: #D35400;
+
+$color-yellow: #ffca39;
+$color-yellow-dark: #F39C12;
+
+$color-emerald: #2ECC71;
+$color-emerald-dark: #27AE60;
+
+$color-turquoise: #1ABC9C;
+$color-turquoise-dark: #16A085;
+
+$color-blue: #3498DB;
+$color-blue-dark: #2980B9;
+
+$color-amethyst: #9B59B6;
+$color-amethyst-dark: #8E44AD;
+
+$color-midnight: #34495E;
+$color-midnight-dark: #2C3E50;
+
+$color-silver: #ECF0F1;
+$color-silver-dark: #BDC3C7;
+
+$color-grey: #95A5A6;
+$color-grey-dark: #7F8C8D;
+
+// ***********FONT*********** //
+
+// FONT-SIZE //
 
 $default-font-size: 1.6rem;
 $font-size-tiny: 0.5rem;
-$font-size-small: 1rem;
+$font-size-small: 1.2rem;
 $font-size-big: 1.5rem;
 $font-size-huge: 2rem;
+
+// FONT-FAMILY //
+
+$font-raleway : 'Raleway', sans-serif;
+
+// FONT-WEIGHT
+
+$font-weigth-700: 700;
 
 // ***********SCREEN*********** //
 

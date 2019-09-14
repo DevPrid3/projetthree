@@ -5,16 +5,15 @@
     padding: .3rem 2.5rem;
     border-radius: 4px;
     z-index: 1;
-    right: -20px;
+    top: -10px;
+    left: 20px;
 
     &-new {
         background-color: $color-primary;
-        transform: rotate(45deg);
     }
 
     &-top {
-        background-color: gold;
-        transform: rotate(45deg);
+        background-color: $color-primary;
     }
 
 }

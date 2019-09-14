@@ -2,16 +2,15 @@
     background-color: $color-white-2;
     grid-column: full-start / full-end;
     padding: 2rem 0;
-
     &__buttons {
 
-        width: 1140px;
+        width: 114rem;
         margin: 1rem auto;
-
         display: flex;
         flex-wrap: wrap;
         justify-items: center;
         align-items: center;
+    
         // display: grid;
         // grid-template-columns: repeat(8, minmax(min-content, 1fr));
         // grid-template-rows: repeat(5, minmax(min-content, 1fr));
