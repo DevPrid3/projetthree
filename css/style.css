@@ -802,6 +802,10 @@ body {
     text-decoration: none;
     transition: all .2s;
     position: relative; }
+  .tbtn--round {
+    font-size: 16px;
+    padding: 5px 1rem;
+    border-radius: 50%; }
   .tbtn--default {
     background-color: #3b3b3b;
     color: #fff;

@@ -28,6 +28,12 @@
         position: relative;
     }
 
+    &--round {
+        font-size: 16px;
+        padding: 5px 1rem; 
+        border-radius: 50%;
+    }
+
     &--default {
         background-color: $color-gray;
         color: $color-white;
