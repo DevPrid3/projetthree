@@ -1,15 +1,18 @@
 .badge {
     position: absolute;
     font-weight: 700;
-    font-size: 1.2rem;
-    padding: .3rem 2.5rem;
-    border-radius: 4px;
+    font-size: 3.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
     z-index: 1;
-    top: -10px;
-    left: 20px;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
 
     &-new {
-        background-color: $color-primary;
+        background-color: rgba($color-primary, .6);
+        
     }
 
     &-top {

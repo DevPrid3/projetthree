@@ -1,11 +1,11 @@
-.blog__card {
+.card {
     background-color: #eee;
     height: auto;
     width: calc(33.3333333% - 3rem);
     margin-top: 5rem;
     word-wrap: break-word;
     position: relative;
-
+    
     &__header {
         height: 30rem;
         overflow: hidden; /* Evitez lors du zoom le */
@@ -173,5 +173,11 @@
                 color: #bbb;
             }
         }
+    }
+}
+
+@media only screen and (max-width: $bp-medium) {
+    .card {
+        width: 100%;
     }
 }
