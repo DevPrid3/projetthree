@@ -5,7 +5,8 @@
 
     //GRID HEADER
     display: grid;
-    grid-template-rows: max-content 10rem 1fr max-content;
+    grid-template-rows: max-content 10rem 50rem max-content;
+    grid-template-columns: 10rem 1fr 10rem;
     grid-row-gap: 2rem;
     justify-items: center;
     align-items: center;
@@ -14,12 +15,13 @@
     &__title {
         text-transform: uppercase;
         font-weight: bold;
-        letter-spacing: 0.5rem;
+        letter-spacing: 0.3rem;
+        grid-column: 2;
         //display: block;
         //text-align: center;
 
         &__full {
-            font-size: 6rem;
+            font-size: 5rem;
 
             &--partone {
                 color: $color-primary;
@@ -27,7 +29,7 @@
 
             &--parttwo {
                 color: $color-white-1;
-                padding: 0px 1.1rem;
+                padding: 0px 1rem;
                 background-color: $color-black-2;
                 border-radius: 1.2rem;
             }
@@ -39,25 +41,92 @@
     }
 
     &__body {
-
+        grid-column: 2;
+        width: 100%;
+        height: 100%;
+        padding: 0 10rem;
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 1rem;
-        text-align: center;
-        padding: 0 2rem;
-        margin: 0 auto;
+        // text-align: center;
+
+        &__box {
+            margin-top: 10rem;
+        }
+
+        &__tag {
+            padding-left: 5rem;
+            margin: .5rem 0;
+            display: inline-block;
+    
+            & a {
+                margin: .5rem;
+                padding: .8rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: .9rem;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 800;
+                background-color: rgba($color-primary-dark, 0.808);
+                color: $color-black-1;
+                border-radius: .6rem;
+                transition: all .4s;
+                letter-spacing: 0.5px;
+    
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+        }
 
         &__main-square {
-            height: 41rem;
-            width: 41rem;
+            background-image: url("/img/sebastian-bednarek-624108-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
             grid-row: 1 / 3;
             grid-column: 1;
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: $color-white;
+            padding-left: 2rem;;
+            font-family: Montserrat,sans-serif;
+
+            &__title {
+                font-weight: 700;
+                font-size: 3.5rem;
+                text-transform: uppercase;
+                font-weight: 800;
+                
+            }
+
+            &__paragraph {
+                font-weight: 400;
+                font-size: 2rem;
+            }
         }
 
         &__square {
-            height: 20rem;
-            width: 20rem;
+            
+        }
+
+        &__square-1 {
+            background-image: url("/img/mink-mingle-109837-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 2;
+            grid-row: 1;    
+        }
+
+        &__square-2 {
+            background-image: url("/img/alice-moore-192521-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 2;
+            grid-row: 2;    
         }
 
         img {
@@ -66,16 +135,26 @@
             object-fit: cover;
             display: block;
             border-radius: 5px;
-            z-index: 10;
+            z-index: 2;
             outline-offset: 2rem;
             backface-visibility: hidden;
             cursor: pointer;
         }
     }
-    // &__btn {
-    //     display: block;
-    //     text-align: center;
-    // }
+    
+    &__btn {
+        grid-column: 2;
+    }
+}
+
+.navigation {
+    grid-column: 2;
+
+}
+
+.navigation__social {
+    grid-column: 2;
+
 }
 
 .header-page {
