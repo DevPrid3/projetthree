@@ -33,7 +33,7 @@
             <nav class="navigation__main">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a class="navigation__link active" href="#">Home</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">About Me</a></li>
+                    <!-- <li class="navigation__item"><a class="navigation__link" href="#">About Me</a></li> -->
                     <li class="navigation__item"><a class="navigation__link" href="#">Blog</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Portfolio</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
@@ -44,22 +44,16 @@
 
         <!-- Body Home -->
 
-        <div class="header__body py-xl codingscreen">
-            <p class="codingscreen-date">12 juillet 2019</p>
-            <i class="codingscreen-window fas fa-times"></i>
-            <h1>Hello world !</h1>
-            <p class="header__body__presentation">
-                Bonjour à tous et bienvenue sur mon blog<br>
-                Je vous parlerais essentiellement de deux choses, le dessin (Paper) qui est l'une de mes passions, 
-                vous pourrez voir l'avancée de certains dessins en cours avec tous les détails qui vont avec (matériels utilisée, temps, type de dessins, ...) 
-                et certains projets lié au dessins comme par exemple "1jours/1dessin" pendant 30 jours.
-                Ensuite la deuxième plus grosses partie du site serait dédié à la programmation web (Code) et pas que, je vous montrerai aussi l'avancé de certains projets
-                ainsi que de petits challenges en programmation.
-                Certains articles de mon blog seront aussi dédié à d'autre sujets divers et varié qui font partie ma vie (Voyage, jeux-vidéo, ...)
-                <br>
-                Bonne visite à tous !
-                
-            </p>
+        <div class="header__body py-xl">
+            <div class="header__body__main-square">
+                    <img src="img/farzad-nazifi-71686-unsplash.jpg" alt="Gallery image 1" class="">
+            </div>
+            <div class="header__body__square">
+                    <img src="img/florian-olivo-1169467-unsplash.jpg" alt="Gallery image 2" class="">
+            </div>
+            <div class="header__body__square">
+                    <img src="img/fotis-fotopoulos-790373-unsplash.jpg" alt="Gallery image 3" class="">
+            </div>
         </div>
 
         <div class="header__btn my-md">
@@ -102,7 +96,7 @@
             </div>
         </div>
     </section>
-
+<!-- 
     <section class="aboutme">
 
         <div class="aboutme__heading">
@@ -159,8 +153,77 @@
                 </div>
             </div>
     </section>
+     -->    
     
-     <section class="blog">
+     <section class="portfolio">
+
+        <div class="portfolio__heading mb-xl">
+            <h2 class="heading-primary--black">Portfolio</h2>
+        </div>
+
+        <div class="portfolio__composition">
+
+            <div class="portfolio__composition__draw">
+                <figure class="portfolio__composition__draw--1">
+                    <img src="img/774f505e27ff8ab6a58cc7162f08c5cbd5cc4f15_hq.jpg" alt="Gallery image 1" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__draw--2">
+                    <img src="img/alex-iby-286943-unsplash.jpg" alt="Gallery image 2" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__draw--3">
+                    <img src="img/alice-moore-192521-unsplash.jpg" alt="Gallery image 3" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__draw--4">
+                    <img src="img/background-image.jpg" alt="Gallery image 4" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__draw--5">
+                    <img src="img/dessin1.jpg" alt="Gallery image 5" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__draw--6">
+                    <img src="img/dariusz-sankowski-56727-unsplash.jpg" alt="Gallery image 6" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__draw--7">
+                    <img src="img/fabian-grohs-653254-unsplash.jpg" alt="Gallery image 7" class="portfolio__composition__img">
+                </figure>
+                <div class="portfolio__composition__draw--8">
+                    <h3 class="portfolio__composition__title heading-primary--black">DESSIN</h3>
+                </div>
+            </div>
+
+            <div class="portfolio__composition__project">
+                <figure class="portfolio__composition__project--1">
+                    <img src="img/farzad-nazifi-71686-unsplash.jpg" alt="Gallery image 1" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__project--2">
+                    <img src="img/florian-olivo-1169467-unsplash.jpg" alt="Gallery image 2" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__project--3">
+                    <img src="img/fotis-fotopoulos-790373-unsplash.jpg" alt="Gallery image 3" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__project--4">
+                    <img src="img/jase-bloor-694238-unsplash.jpg" alt="Gallery image 4" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__project--5">
+                    <img src="img/juja-han-456323-unsplash.jpg" alt="Gallery image 5" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__project--6">
+                    <img src="img/projet1.JPG" alt="Gallery image 6" class="portfolio__composition__img">
+                </figure>
+                <figure class="portfolio__composition__project--7">
+                    <img src="img/sebastian-bednarek-624108-unsplash.jpg" alt="Gallery image 7" class="portfolio__composition__img">
+                </figure>
+                <div class="portfolio__composition__project--8">
+                    <h3 class="portfolio__composition__title heading-primary--black">PROJET</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio__btn my-md">
+            <a href="portfolio.html" class="tbtn">Allons voir ça !</a>
+        </div>
+    </section>
+
+    <section class="blog">
 
         <div class="blog__background-image"></div>
         
@@ -273,74 +336,6 @@
 
         <div class="blog__btn my-md">
             <a href="blog.html" class="tbtn">Tous les articles</a>
-        </div>
-    </section>
-    
-    <section class="portfolio">
-
-        <div class="portfolio__heading">
-            <h2 class="heading-primary--black">Portfolio</h2>
-        </div>
-
-        <div class="portfolio__composition">
-
-            <div class="portfolio__composition__draw">
-                <figure class="portfolio__composition__draw--1">
-                    <img src="img/774f505e27ff8ab6a58cc7162f08c5cbd5cc4f15_hq.jpg" alt="Gallery image 1" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__draw--2">
-                    <img src="img/alex-iby-286943-unsplash.jpg" alt="Gallery image 2" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__draw--3">
-                    <img src="img/alice-moore-192521-unsplash.jpg" alt="Gallery image 3" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__draw--4">
-                    <img src="img/background-image.jpg" alt="Gallery image 4" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__draw--5">
-                    <img src="img/dessin1.jpg" alt="Gallery image 5" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__draw--6">
-                    <img src="img/dariusz-sankowski-56727-unsplash.jpg" alt="Gallery image 6" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__draw--7">
-                    <img src="img/fabian-grohs-653254-unsplash.jpg" alt="Gallery image 7" class="portfolio__composition__img">
-                </figure>
-                <div class="portfolio__composition__draw--8">
-                    <h3 class="portfolio__composition__title heading-primary--black">DESSIN</h3>
-                </div>
-            </div>
-
-            <div class="portfolio__composition__project">
-                <figure class="portfolio__composition__project--1">
-                    <img src="img/farzad-nazifi-71686-unsplash.jpg" alt="Gallery image 1" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__project--2">
-                    <img src="img/florian-olivo-1169467-unsplash.jpg" alt="Gallery image 2" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__project--3">
-                    <img src="img/fotis-fotopoulos-790373-unsplash.jpg" alt="Gallery image 3" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__project--4">
-                    <img src="img/jase-bloor-694238-unsplash.jpg" alt="Gallery image 4" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__project--5">
-                    <img src="img/juja-han-456323-unsplash.jpg" alt="Gallery image 5" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__project--6">
-                    <img src="img/projet1.JPG" alt="Gallery image 6" class="portfolio__composition__img">
-                </figure>
-                <figure class="portfolio__composition__project--7">
-                    <img src="img/sebastian-bednarek-624108-unsplash.jpg" alt="Gallery image 7" class="portfolio__composition__img">
-                </figure>
-                <div class="portfolio__composition__project--8">
-                    <h3 class="portfolio__composition__title heading-primary--black">PROJET</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio__btn my-md">
-            <a href="portfolio.html" class="tbtn">Allons voir ça !</a>
         </div>
     </section>
 
