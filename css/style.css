@@ -569,7 +569,7 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-gap: 1rem; }
     .header__body__box {
-      margin-top: 10rem; }
+      margin-top: 15rem; }
     .header__body__tag {
       padding-left: 5rem;
       margin: .5rem 0;
@@ -596,12 +596,17 @@ body {
       grid-row: 1 / 3;
       grid-column: 1;
       position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      object-fit: cover;
+      border-radius: 5px;
+      outline-offset: 2rem;
+      backface-visibility: hidden;
       color: #fff;
       padding-left: 2rem;
-      font-family: Montserrat,sans-serif; }
+      font-family: Montserrat,sans-serif;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
       .header__body__main-square__title {
         font-weight: 700;
         font-size: 3.5rem;
@@ -610,6 +615,76 @@ body {
       .header__body__main-square__paragraph {
         font-weight: 400;
         font-size: 2rem; }
+      .header__body__main-square__author {
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        border: 2px solid #eee;
+        background-image: url("/img/alex-iby-286943-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        z-index: 500; }
+      .header__body__main-square__date-name {
+        position: absolute;
+        bottom: 1rem;
+        left: 7rem;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        font-weight: bold; }
+      .header__body__main-square-name {
+        color: #F23F24; }
+      .header__body__main-square-date {
+        color: #3b3b3b;
+        font-style: italic; }
+    .header__body__square {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+      padding-left: 1rem;
+      font-family: Montserrat,sans-serif;
+      object-fit: cover;
+      border-radius: 5px;
+      outline-offset: 2rem;
+      backface-visibility: hidden;
+      cursor: pointer;
+      position: relative; }
+      .header__body__square__title {
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 800; }
+      .header__body__square__tag {
+        margin: .5rem 0;
+        display: inline-block; }
+        .header__body__square__tag a {
+          margin: .5rem;
+          padding: .8rem;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: .6rem;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 800;
+          background-color: rgba(245, 51, 33, 0.808);
+          color: #111;
+          border-radius: .6rem;
+          transition: all .4s;
+          letter-spacing: 0.5px; }
+          .header__body__square__tag a:hover {
+            background-color: #F23F24; }
+      .header__body__square__date-name {
+        margin-top: 1rem;
+        font-size: 1rem; }
+      .header__body__square-name {
+        color: #F23F24;
+        font-weight: bold; }
+      .header__body__square-date {
+        color: #3b3b3b;
+        font-weight: bold;
+        font-style: italic; }
     .header__body__square-1 {
       background-image: url("/img/mink-mingle-109837-unsplash.jpg");
       background-size: cover;
@@ -622,16 +697,6 @@ body {
       background-position: center;
       grid-column: 2;
       grid-row: 2; }
-    .header__body img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      border-radius: 5px;
-      z-index: 2;
-      outline-offset: 2rem;
-      backface-visibility: hidden;
-      cursor: pointer; }
   .header__btn {
     grid-column: 2; }
 
@@ -639,7 +704,8 @@ body {
   grid-column: 2; }
 
 .navigation__social {
-  grid-column: 2; }
+  grid-column: 2;
+  text-align: center; }
 
 .header-page {
   background-color: #fcfcfc;
@@ -724,7 +790,7 @@ body {
   text-align: center; }
   .navigation__social__link {
     padding: 0 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #222; }
     .navigation__social__link > i {
       transition: all .3s; }
