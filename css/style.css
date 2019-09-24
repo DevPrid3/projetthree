@@ -547,7 +547,8 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.3rem;
-    grid-column: 2; }
+    grid-column: 2;
+    grid-row: 1; }
     .header__title__full {
       font-size: 5rem; }
       .header__title__full--partone {
@@ -559,6 +560,17 @@ body {
         border-radius: 1.2rem; }
     .header__title > a {
       text-decoration: none; }
+  .header__search-bar {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: flex-end;
+    font-size: 1.6rem; }
+    .header__search-bar h5 {
+      font-weight: 400;
+      letter-spacing: .5px; }
+    .header__search-bar i {
+      margin-left: 1rem;
+      font-size: 2rem; }
   .header__body {
     grid-column: 2;
     width: 100%;
@@ -573,14 +585,14 @@ body {
     .header__body__tag {
       padding-left: 5rem;
       margin: .5rem 0;
-      display: inline-block; }
+      display: inline-block;
+      font-family: 'Raleway', sans-serif; }
       .header__body__tag a {
         margin: .5rem;
         padding: .8rem;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: .9rem;
-        font-family: 'Raleway', sans-serif;
+        font-size: 0.8rem;
         font-weight: 800;
         background-color: rgba(245, 51, 33, 0.808);
         color: #111;
@@ -603,12 +615,15 @@ body {
       color: #fff;
       padding-left: 2rem;
       font-family: Montserrat,sans-serif;
+      transition: all .2s;
       cursor: pointer;
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      .header__body__main-square:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
       .header__body__main-square__title {
-        font-weight: 700;
         font-size: 3.5rem;
         text-transform: uppercase;
         font-weight: 800; }
@@ -648,15 +663,16 @@ body {
       font-family: Montserrat,sans-serif;
       object-fit: cover;
       border-radius: 5px;
-      outline-offset: 2rem;
-      backface-visibility: hidden;
+      transition: all .2s;
       cursor: pointer;
       position: relative; }
+      .header__body__square:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
       .header__body__square__title {
         font-weight: 700;
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-weight: 800; }
+        font-size: 1.5rem;
+        text-transform: uppercase; }
       .header__body__square__tag {
         margin: .5rem 0;
         display: inline-block; }
@@ -706,6 +722,9 @@ body {
 .navigation__social {
   grid-column: 2;
   text-align: center; }
+  .navigation__social__title {
+    font-size: 1.2rem;
+    text-transform: uppercase; }
 
 .header-page {
   background-color: #fcfcfc;
@@ -740,7 +759,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -1318,7 +1337,7 @@ body {
         color: #7F8C8D; }
   .tbtn--tiny {
     line-height: 1;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     padding: .5em 1rem; }
   .tbtn--small {
     line-height: 1.3;
@@ -1360,16 +1379,24 @@ body {
     text-align: center; }
   .description__box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 10rem; }
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 30rem;
+    padding: 0 20rem; }
   .description__item {
     display: grid;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: repeat(2, min-content);
+    row-gap: 3rem;
     justify-items: center;
     text-align: center; }
+    .description__item--2 .description__item-text {
+      grid-column: 2;
+      grid-row: 1; }
+    .description__item--2 .description__item-box {
+      grid-column: 2;
+      grid-row: 2; }
     .description__item i {
       color: #eee;
-      font-size: 4rem;
+      font-size: 10rem;
       padding-top: 1rem;
       transition: all .3s; }
     .description__item .fa-pencil-ruler {
@@ -1384,12 +1411,6 @@ body {
       padding-top: 1rem; }
       .description__item .fa-code:hover {
         color: #0c5da8; }
-    .description__item .fa-route {
-      color: rgba(27, 168, 74, 0.5);
-      font-size: 4rem;
-      padding-top: 1rem; }
-      .description__item .fa-route:hover {
-        color: #1ba84a; }
     .description__item h3 {
       margin-top: 2rem;
       color: #eee;
