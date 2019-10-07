@@ -21,6 +21,19 @@ body {
   grid-template-rows: 10rem repeat(2, max-content);
   grid-template-columns: [full-start] 10rem [center-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 10rem [full-end]; }
 
+.row, .row-reverse {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f53321;
+  margin-bottom: 1rem;
+  display: grid; }
+
+.row {
+  grid-template-columns: 10rem repeat(2, 1fr); }
+
+.row-reverse {
+  grid-template-columns: repeat(2, 1fr) 10rem; }
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;

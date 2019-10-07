@@ -25,3 +25,21 @@ body {
     grid-template-rows: 10rem repeat(2, max-content); 
     grid-template-columns: [full-start] 10rem [center-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end] ) [center-end] 10rem [full-end];
 }
+
+%row {
+    width: 80%;
+    margin: 0 auto;
+    background-color: $color-primary-dark;
+    margin-bottom: 1rem;
+    display: grid;
+}
+
+.row { 
+    @extend %row;
+    grid-template-columns: 10rem repeat(2,1fr);
+}
+
+.row-reverse {
+    @extend %row;
+    grid-template-columns: repeat(2,1fr) 10rem;
+}
