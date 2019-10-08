@@ -24,9 +24,10 @@ body {
 .row, .row-reverse {
   width: 80%;
   margin: 0 auto;
-  background-color: #f53321;
   margin-bottom: 1rem;
-  display: grid; }
+  display: grid;
+  align-items: center;
+  justify-items: center; }
 
 .row {
   grid-template-columns: 10rem repeat(2, 1fr); }
@@ -1497,3 +1498,7 @@ body {
   background-color: #f7f7f7;
   grid-column: full-start / full-end;
   padding: 2rem 0; }
+  .portfolio-main__img {
+    height: 40rem; }
+  .portfolio-main__description {
+    justify-self: center; }

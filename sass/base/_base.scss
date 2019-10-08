@@ -29,14 +29,17 @@ body {
 %row {
     width: 80%;
     margin: 0 auto;
-    background-color: $color-primary-dark;
+    // background-color: $color-white;
     margin-bottom: 1rem;
     display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 .row { 
     @extend %row;
     grid-template-columns: 10rem repeat(2,1fr);
+    
 }
 
 .row-reverse {

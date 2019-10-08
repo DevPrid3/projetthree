@@ -2,4 +2,12 @@
     background-color: $color-white-2;
     grid-column: full-start / full-end;
     padding: 2rem 0;
+
+    &__img {
+        height: 40rem;
+    }
+
+    &__description {
+        justify-self: center;
+    }
 }
