@@ -35,7 +35,6 @@
     //padding-top: 6rem;
     grid-row: 1 / 1;
     grid-column: 2 / span 1;
-    align-self: center;
 
     &__list {
         display: flex;
@@ -101,8 +100,8 @@
 
 .active {
     color: $color-white-1;
-    padding: .2rem .4rem;
+    padding: .3rem .5rem;
     background-color: $color-black-2;
     border-radius: .6rem;
-    font-weight: bold;
+    font-weight: 600;
 }

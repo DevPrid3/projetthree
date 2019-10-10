@@ -1,13 +1,24 @@
 .portfolio-main {
-    background-color: $color-white-2;
+    // background-color: $color-white-2;
+    background-image: url('../../complete-javascript-course-master-capture/bg-pattern.jpg');
+    background-repeat: repeat;
+    // background-size: cover;
     grid-column: full-start / full-end;
-    padding: 2rem 0;
 
     &__img {
         height: 30rem;
+        width: 50rem;
+        justify-self: center;
     }
 
     &__description {
+        padding: 1.5rem;
+        border-left: 1px solid rgba($color-gray-3, .1);
+        border-right: 1px solid rgba($color-gray-3, .1);
+    }
 
+    &__date {
+        align-self: center;
+        text-align: center;
     }
 }

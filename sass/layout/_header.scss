@@ -277,14 +277,16 @@
 }
 
 .header-page {
-    background-color: $color-white-1;
+    
+    background-color: rgba($color-white-1, 0.5);
     grid-column: full-start / full-end;
-    padding: 1rem;
+    // border-bottom: 2px solid $color-gray-3;
 
     //GRID HEADER
     display: grid;
     grid-template-rows: 10rem;
     grid-template-columns: 20rem 1fr;
+    align-items: center;
     //
 
     &__title {
@@ -298,7 +300,6 @@
             font-size: $font-size-titlePage;
             width: auto;
             text-align: center;
-            justify-self: flex-start;
 
             &--partone {
                 color: $color-primary;
