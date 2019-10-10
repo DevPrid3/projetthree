@@ -25,9 +25,7 @@ body {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 1rem;
-  display: grid;
-  align-items: center;
-  justify-items: center; }
+  display: grid; }
 
 .row {
   grid-template-columns: 10rem repeat(2, 1fr); }
@@ -1499,6 +1497,4 @@ body {
   grid-column: full-start / full-end;
   padding: 2rem 0; }
   .portfolio-main__img {
-    height: 40rem; }
-  .portfolio-main__description {
-    justify-self: center; }
+    height: 30rem; }
