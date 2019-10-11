@@ -1,0 +1,28 @@
+.tag {
+    display: flex;
+
+    &__item {
+        list-style: none;
+        
+        &:not(:first-child) {
+            margin-left: 1rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-gray-1;
+        border: 2px solid $color-gray-1;
+        font-size: $font-size-small;
+        padding: 6px 1.2rem;
+        border-radius: 1.8rem; 
+        line-height: 1.35;
+        font-weight: 700;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-gray-1;
+            color: $color-white-1;
+        }
+    }
+}

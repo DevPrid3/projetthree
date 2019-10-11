@@ -110,7 +110,7 @@ body {
 
 .heading-paragraph {
   font-weight: 400;
-  color: #3b3b3b;
+  color: #5b5b5b;
   font-size: 1.2rem; }
 
 .underline {
@@ -542,7 +542,8 @@ body {
 .footer {
   background-color: #f02e1c;
   grid-column: full-start / full-end;
-  padding: 5rem; }
+  padding: 5rem;
+  position: relative; }
 
 .copyright {
   font-size: 1.4rem;
@@ -846,6 +847,36 @@ body {
   border-radius: .6rem;
   font-weight: 600; }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto; }
+  .pagination__item {
+    list-style: none; }
+  .pagination__link {
+    text-decoration: none;
+    color: #f02e1c;
+    border: 2px solid #f02e1c;
+    font-size: 1.6rem;
+    padding: 6px 1.2rem;
+    border-radius: 1.8rem;
+    margin-left: 1rem;
+    line-height: 1.35;
+    font-weight: 700;
+    transition: all .2s; }
+    .pagination__link .fas {
+      transition: all .2s; }
+    .pagination__link--active {
+      background-color: #f02e1c;
+      color: #fcfcfc; }
+    .pagination__link:hover {
+      background-color: #f02e1c;
+      color: #fcfcfc; }
+      .pagination__link:hover .fa-angle-double-left {
+        transform: translateX(-5px); }
+      .pagination__link:hover .fa-angle-double-right {
+        transform: translateX(5px); }
+
 .slider {
   height: 80rem;
   position: relative;
@@ -948,10 +979,30 @@ body {
     outline-color: #333;
     box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0); } }
 
+.tag {
+  display: flex; }
+  .tag__item {
+    list-style: none; }
+    .tag__item:not(:first-child) {
+      margin-left: 1rem; }
+  .tag__link {
+    text-decoration: none;
+    color: #4b4b4b;
+    border: 2px solid #4b4b4b;
+    font-size: 1.2rem;
+    padding: 6px 1.2rem;
+    border-radius: 1.8rem;
+    line-height: 1.35;
+    font-weight: 700;
+    transition: all .2s; }
+    .tag__link:hover {
+      background-color: #4b4b4b;
+      color: #fcfcfc; }
+
 .thumbnail {
   padding: .4rem;
   line-height: 1.5;
-  border: 1px solid rgba(59, 59, 59, 0.1);
+  border: 1px solid rgba(34, 34, 34, 0.1);
   border-radius: 3px;
   background-color: #fcfcfc; }
 
@@ -1504,7 +1555,8 @@ body {
   .portfolio-main__img {
     height: 30rem;
     width: 50rem;
-    justify-self: center; }
+    justify-self: center;
+    align-self: center; }
   .portfolio-main__description {
     padding: 1.5rem;
     border-left: 1px solid rgba(107, 107, 107, 0.1);
