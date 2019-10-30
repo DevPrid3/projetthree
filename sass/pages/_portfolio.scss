@@ -5,11 +5,17 @@
     // background-size: cover;
     grid-column: full-start / full-end;
 
+    &__tag-filter, &__tag-displayall {
+        display: flex;
+        justify-content: center;
+        font-size: $font-size-big;
+        text-transform: uppercase;
+    }
+
     &__img {
         height: 30rem;
         width: 50rem;
-        justify-self: center;
-        align-self: center;
+        
     }
 
     &__description {
@@ -19,7 +25,6 @@
     }
 
     &__date {
-        align-self: center;
-        text-align: center;
+        
     }
 }

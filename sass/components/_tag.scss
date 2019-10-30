@@ -1,5 +1,6 @@
 .tag {
     display: flex;
+    font-size: $font-size-small;
 
     &__item {
         list-style: none;
@@ -13,7 +14,6 @@
         text-decoration: none;
         color: $color-gray-1;
         border: 2px solid $color-gray-1;
-        font-size: $font-size-small;
         padding: 6px 1.2rem;
         border-radius: 1.8rem; 
         line-height: 1.35;
@@ -23,6 +23,16 @@
         &:hover {
             background-color: $color-gray-1;
             color: $color-white-1;
+        }
+
+        &--dark {
+            color: $color-white-1;
+            border: 2px solid $color-gray-1;
+            background-color: $color-gray-1;
+
+            &:hover {
+                background-color: $color-gray;
+            }
         }
     }
 }

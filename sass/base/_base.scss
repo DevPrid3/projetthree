@@ -30,21 +30,24 @@ body {
     width: 80%;
     margin: 0 auto;
     // background-color: $color-white;
-    margin-bottom: 1rem;
     display: grid;
-    // align-items: center;
-    // justify-content: center;
-    background-color: rgba($color-white-1, .6);
+    align-items: center;
+    justify-items: center;
     border: 1px solid rgba($color-gray-3, .1);
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
 }
 
 .row { 
     @extend %row;
     grid-template-columns: 15rem repeat(2,1fr);
+    background-color: rgba($color-white-1, .5);
     
 }
 
 .row-reverse {
     @extend %row;
     grid-template-columns: repeat(2,1fr) 15rem;
+    background-color: rgba($color-white-1, .7);
 }

@@ -21,8 +21,9 @@
     <header class="header-page">
         
         <!-- Title -->
+        
         <div class="header-page__title">
-            <a href="#">
+            <a href="./index.html">
                 <h1 class="header-page__title__full">
                     <span class="header-page__title__full--partone">draw</span>
                     <br>
@@ -37,14 +38,22 @@
             <nav class="navigation-page__main">
                 <ul class="navigation-page__list">
                     <li class="navigation-page__item"><a class="navigation-page__link" href="index.html">Home</a></li>
-                    <li class="navigation-page__item"><a class="navigation-page__link" href="#">About Me</a></li>
                     <li class="navigation-page__item"><a class="navigation-page__link" href="blog.html">Blog</a></li>
                     <li class="navigation-page__item"><a class="navigation-page__link active" href="#">Portfolio</a></li>
                     <li class="navigation-page__item"><a class="navigation-page__link" href="#">Contact</a></li>
                     <li class="navigation-page__item"><a class="navigation-page__link" href="./components.html">Components</a></li>
-
                 </ul>
             </nav>
+        </div>
+
+        <!-- Navigation Social -->
+
+        <div class="navigation__social-page">
+            <a class="navigation__social-page__link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a class="navigation__social-page__link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="navigation__social-page__link" href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="navigation__social-page__link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a class="navigation__social-page__link" href="https://www.discord.com" target="_blank"><i class="fab fa-discord"></i></a>
         </div>
 
     </header>
@@ -54,80 +63,163 @@
             <h2 class="heading-primary--black">Portfolio</h2>
         </div>
 
+        <ul class="portfolio-main__tag-filter mb-xl">
+            <li class="tag__item"><a href="#" class="tag__link">html</a></li>
+            <li class="tag__item"><a href="#" class="tag__link">sass</a></li>
+            <li class="tag__item"><a href="#" class="tag__link">javascript</a></li>
+            <li class="tag__item"><a href="#" class="tag__link">responsive</a></li>
+            <li class="tag__item"><a href="#" class="tag__link">cssgrid</a></li>
+            <li class="tag__item"><a href="#" class="tag__link">flexbox</a></li>
+        </ul>
+
+        <div class="portfolio-main__tag-displayall mb-md">
+            <a href="#" class="tag__link tag__link--dark">Tout Afficher</a>
+        </div>
+    
         <!-- https://codepen.io/maheshambure21/pen/bNXXeM
         https://codepen.io/maheshambure21/pen/GgVbVW -->
 
         <div class="portfolio-main__box">
-            <div class="row py-md">
-                <h3 class="portfolio-main__date"><span class="heading-3">08</span><span class="heading-3"> Oct</span><br><span class="heading-3">2019</span><br></h3>
-                <div class="portfolio-main__description">
-                    <h1 class="heading-1">project : Outdoors</h1>
-                    <h3 class="heading-3">Udemy - Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h3>
-                    <ul class="tag my-md">
-                        <li class="tag__item"><a href="" class="tag__link">#html</a></li>
-                        <li class="tag__item"><a href="" class="tag__link">#sass</a></li>
-                        <li class="tag__item"><a href="" class="tag__link">#responsive</a></li>
-                    </ul>
-                    <p class="heading-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Arcu odio ut sem nulla pharetra diam sit amet nisl. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. 
-                        Arcu ac tortor dignissim convallis aenean et tortor. Risus at ultrices mi tempus imperdiet nulla. 
-                        Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate. Varius vel pharetra vel turpis. 
-                        Mattis enim ut tellus elementum sagittis. Diam vulputate ut pharetra sit amet aliquam id. Sit amet massa vitae tortor condimentum. 
-                        Nunc sed id semper risus in. Senectus et netus et malesuada fames ac turpis. Duis ultricies lacus sed turpis tincidunt. 
-                        Faucibus turpis in eu mi bibendum neque egestas congue quisque. Adipiscing enim eu turpis egestas pretium aenean pharetra. 
-                        Eget aliquet nibh praesent tristique magna sit amet purus gravida. Nisi est sit amet facilisis magna etiam. 
-                        Et netus et malesuada fames ac turpis egestas. Nulla facilisi nullam vehicula ipsum. Morbi tristique senectus et netus.</p>
-                </div>
-                <img src="complete-javascript-course-master-capture/Nouveau_dossier/Natours.PNG" alt="" class="portfolio-main__img thumbnail">
-            </div>
+            <ul>
+                <li class="row py-md">
+                    <h3 class="portfolio-main__date"><span class="heading-3">08</span><span class="heading-3"> Oct</span><br><span class="heading-3">2019</span><br></h3>
+                    <div class="portfolio-main__description">
+                        <h1 class="heading-1">project : Outdoors</h1>
+                        <h3 class="heading-3">Udemy - Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h3>
+                        <ul class="tag my-md">
+                            <li class="tag__item"><a href="#" class="tag__link">#html</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#sass</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#responsive</a></li>
+                        </ul>
+                        <p class="heading-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Arcu odio ut sem nulla pharetra diam sit amet nisl. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. 
+                            Arcu ac tortor dignissim convallis aenean et tortor. Risus at ultrices mi tempus imperdiet nulla. 
+                            Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate. Varius vel pharetra vel turpis. 
+                            Mattis enim ut tellus elementum sagittis. Diam vulputate ut pharetra sit amet aliquam id. Sit amet massa vitae tortor condimentum. 
+                            Nunc sed id semper risus in. Senectus et netus et malesuada fames ac turpis. Duis ultricies lacus sed turpis tincidunt. 
+                            Faucibus turpis in eu mi bibendum neque egestas congue quisque. Adipiscing enim eu turpis egestas pretium aenean pharetra. 
+                            Eget aliquet nibh praesent tristique magna sit amet purus gravida. Nisi est sit amet facilisis magna etiam. 
+                            Et netus et malesuada fames ac turpis egestas. Nulla facilisi nullam vehicula ipsum. Morbi tristique senectus et netus.</p>
+                    </div>
+                    <img src="complete-javascript-course-master-capture/Nouveau_dossier/Natours.PNG" alt="" class="portfolio-main__img thumbnail">        
+                </li>
 
-            <div class="row-reverse py-md">
-                <img src="complete-javascript-course-master-capture/Nouveau_dossier/nexter.PNG" alt="" class="portfolio-main__img thumbnail">  
-                <div class="portfolio-main__description">
-                    <h1 class="heading-1">Outdoors</h1>
-                    <h3 class="heading-3 mb-sm">Udemy - Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h3>
-                    <h5 class="heading-5 mb-lg">Technologie utilisées</h5>
-                    <p class="heading-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti perferendis aperiam beatae dignissimos, 
-                        dolore in dolorum est repellat ab. Officia similique veniam quam voluptatem hic quidem dolore expedita sit unde?</p>
-                </div>
-                <h3 class="portfolio-main__date"><span class="heading-3">10</span><span class="heading-3"> Jan</span><br><span class="heading-3">2019</span><br></h3>
-            </div>
+                <li class="row-reverse py-md">
+                    <img src="complete-javascript-course-master-capture/Nouveau_dossier/nexter.PNG" alt="" class="portfolio-main__img thumbnail">  
+                    <div class="portfolio-main__description">
+                        <h1 class="heading-1">Project : nexter</h1>
+                        <h3 class="heading-3 mb-sm">Udemy - Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h3>
+                        <ul class="tag my-md">
+                            <li class="tag__item"><a href="#" class="tag__link">#html</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#sass</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#flexbox</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#responsive</a></li>
+                        </ul>
+                        <p class="heading-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti perferendis aperiam beatae dignissimos, 
+                            dolore in dolorum est repellat ab. Officia similique veniam quam voluptatem hic quidem dolore expedita sit unde?</p>
+                    </div>
+                    <h3 class="portfolio-main__date"><span class="heading-3">10</span><span class="heading-3"> Jan</span><br><span class="heading-3">2019</span><br></h3>
+                </li>
 
-            <div class="row py-md">
-                <h3 class="portfolio-main__date"><span class="heading-3">25</span><span class="heading-3"> Apr</span><br><span class="heading-3">2019</span><br></h3>
-                <div class="portfolio-main__description">
-                    <h1 class="heading-1">Outdoors</h1>
-                    <h3 class="heading-3 mb-sm">Udemy - Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h3>
-                    <h5 class="heading-5 mb-lg">Technologie utilisées</h5>
-                    <p class="heading-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti perferendis aperiam beatae dignissimos, 
-                        dolore in dolorum est repellat ab. Officia similique veniam quam voluptatem hic quidem dolore expedita sit unde?</p>
-                </div>
-                <img src="complete-javascript-course-master-capture/Nouveau_dossier/trillo.PNG" alt="" class="portfolio-main__img thumbnail">
-            </div>
+                <li class="row py-md">
+                    <h3 class="portfolio-main__date"><span class="heading-3">25</span><span class="heading-3"> Apr</span><br><span class="heading-3">2019</span><br></h3>
+                    <div class="portfolio-main__description">
+                        <h1 class="heading-1">project : trillo</h1>
+                        <h3 class="heading-3 mb-sm">Udemy - Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h3>
+                        <ul class="tag my-md">
+                            <li class="tag__item"><a href="#" class="tag__link">#html</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#sass</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#responsive</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#cssgrid</a></li>
+                        </ul>
+                        <p class="heading-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti perferendis aperiam beatae dignissimos, 
+                            dolore in dolorum est repellat ab. Officia similique veniam quam voluptatem hic quidem dolore expedita sit unde?</p>
+                    </div>
+                    <img src="complete-javascript-course-master-capture/Nouveau_dossier/trillo.PNG" alt="" class="portfolio-main__img thumbnail">
+                </li>
 
-            <div class="row-reverse py-md">
-                <img src="complete-javascript-course-master-capture/Nouveau_dossier/Glozzom.PNG" alt="" class="portfolio-main__img thumbnail">  
-                <div class="portfolio-main__description">
-                    <h1 class="heading-1">Outdoors</h1>
-                    <h3 class="heading-3 mb-sm">Udemy - Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h3>
-                    <h5 class="heading-5 mb-lg">Technologie utilisées</h5>
-                    <p class="heading-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti perferendis aperiam beatae dignissimos, 
-                        dolore in dolorum est repellat ab. Officia similique veniam quam voluptatem hic quidem dolore expedita sit unde?</p>
-                </div>
-                <h3 class="portfolio-main__date"><span class="heading-3">10</span><span class="heading-3"> Jan</span><br><span class="heading-3">2019</span><br></h3>
-            </div>
+                <li class="row-reverse py-md">
+                    <img src="complete-javascript-course-master-capture/Nouveau_dossier/Looplab.PNG" alt="" class="portfolio-main__img thumbnail">  
+                    <div class="portfolio-main__description">
+                        <h1 class="heading-1">project : LoopLAB Social Theme</h1>
+                        <h3 class="heading-3 mb-sm">Udemy - Bootstrap 4 from scratch with 5 Projects</h3>
+                        <ul class="tag my-md">
+                            <li class="tag__item"><a href="#" class="tag__link">#html</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#css</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#bootstrap</a></li>
+                        </ul>
+                        <p class="heading-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti perferendis aperiam beatae dignissimos, 
+                            dolore in dolorum est repellat ab. Officia similique veniam quam voluptatem hic quidem dolore expedita sit unde?</p>
+                    </div>
+                    <h3 class="portfolio-main__date"><span class="heading-3">10</span><span class="heading-3"> Jan</span><br><span class="heading-3">2019</span><br></h3>
+                </li>
 
-            <div class="row py-md">
-                <h3 class="portfolio-main__date"><span class="heading-3">25</span><span class="heading-3"> Apr</span><br><span class="heading-3">2019</span><br></h3>
-                <div class="portfolio-main__description">
-                    <h1 class="heading-1">Outdoors</h1>
-                    <h3 class="heading-3 mb-sm">Cours - Udemy</h3>
-                    <h5 class="heading-5 mb-lg">Technologie utilisées</h5>
-                    <p class="heading-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti perferendis aperiam beatae dignissimos, 
-                        dolore in dolorum est repellat ab. Officia similique veniam quam voluptatem hic quidem dolore expedita sit unde?</p>
-                </div>
-                <img src="complete-javascript-course-master-capture/Nouveau_dossier/mixuze.PNG" alt="" class="portfolio-main__img thumbnail">
-            </div>
+                <li class="row py-md">
+                    <h3 class="portfolio-main__date"><span class="heading-3">25</span><span class="heading-3"> Apr</span><br><span class="heading-3">2019</span><br></h3>
+                    <div class="portfolio-main__description">
+                        <h1 class="heading-1">project : Mixuze Book Theme</h1>
+                        <h3 class="heading-3 mb-sm">Udemy - Bootstrap 4 from scratch with 5 Projects</h3>
+                        <ul class="tag my-md">
+                            <li class="tag__item"><a href="#" class="tag__link">#html</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#sass</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#bootstrap</a></li>
+                        </ul>
+                        <p class="heading-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti perferendis aperiam beatae dignissimos, 
+                            dolore in dolorum est repellat ab. Officia similique veniam quam voluptatem hic quidem dolore expedita sit unde?</p>
+                    </div>
+                    <img src="complete-javascript-course-master-capture/Nouveau_dossier/mixuze.PNG" alt="" class="portfolio-main__img thumbnail">
+                </li>
+
+                <li class="row-reverse py-md">
+                    <img src="complete-javascript-course-master-capture/Nouveau_dossier/Glozzom.PNG" alt="" class="portfolio-main__img thumbnail">  
+                    <div class="portfolio-main__description">
+                        <h1 class="heading-1">project : Glozzom Multi Page Theme</h1>
+                        <h3 class="heading-3 mb-sm">Udemy - Bootstrap 4 from scratch with 5 Projects</h3>
+                        <ul class="tag my-md">
+                            <li class="tag__item"><a href="#" class="tag__link">#html</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#css</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#bootstrap</a></li>
+                        </ul>
+                        <p class="heading-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti perferendis aperiam beatae dignissimos, 
+                            dolore in dolorum est repellat ab. Officia similique veniam quam voluptatem hic quidem dolore expedita sit unde?</p>
+                    </div>
+                    <h3 class="portfolio-main__date"><span class="heading-3">10</span><span class="heading-3"> Jan</span><br><span class="heading-3">2019</span><br></h3>
+                </li>
+
+                <li class="row py-md">
+                    <h3 class="portfolio-main__date"><span class="heading-3">25</span><span class="heading-3"> Apr</span><br><span class="heading-3">2019</span><br></h3>
+                    <div class="portfolio-main__description">
+                        <h1 class="heading-1">project : Blogen Admin UI</h1>
+                        <h3 class="heading-3 mb-sm">Udemy - Bootstrap 4 from scratch with 5 Projects</h3>
+                        <ul class="tag my-md">
+                            <li class="tag__item"><a href="#" class="tag__link">#html</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#css</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#bootstrap</a></li>
+                        </ul>
+                        <p class="heading-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti perferendis aperiam beatae dignissimos, 
+                            dolore in dolorum est repellat ab. Officia similique veniam quam voluptatem hic quidem dolore expedita sit unde?</p>
+                    </div>
+                    <img src="complete-javascript-course-master-capture/Nouveau_dossier/blogen.PNG" alt="" class="portfolio-main__img thumbnail">
+                </li>
+
+                <li class="row-reverse py-md">
+                    <img src="complete-javascript-course-master-capture/Nouveau_dossier/portfoliogrid.PNG" alt="" class="portfolio-main__img thumbnail">  
+                    <div class="portfolio-main__description">
+                        <h1 class="heading-1">project : Portfoligrid</h1>
+                        <h3 class="heading-3 mb-sm">Udemy - Bootstrap 4 from scratch with 5 Projects</h3>
+                        <ul class="tag my-md">
+                            <li class="tag__item"><a href="#" class="tag__link">#html</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#css</a></li>
+                            <li class="tag__item"><a href="#" class="tag__link">#bootstrap</a></li>
+                        </ul>
+                        <p class="heading-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti perferendis aperiam beatae dignissimos, 
+                            dolore in dolorum est repellat ab. Officia similique veniam quam voluptatem hic quidem dolore expedita sit unde?</p>
+                    </div>
+                    <h3 class="portfolio-main__date"><span class="heading-3">10</span><span class="heading-3"> Jan</span><br><span class="heading-3">2019</span><br></h3>
+                </li>
+            </ul>
+
+            <!-- Pagination bar --> 
 
             <ul class="portfolio-main__pagination pagination">
                 <li class="pagination__item"><a href="#" class="pagination__link"><span><i class="fas fa-angle-double-left"></i></span> Previous</a></li>
@@ -138,7 +230,10 @@
             </ul>
 
         </div>
+
     </div>
+
+    <!-- Footer --> 
 
     <footer class="footer">
         <p class="copyright">

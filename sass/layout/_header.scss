@@ -39,24 +39,6 @@
         }
     }
 
-    &__search-bar {
-        grid-column: 2;
-        grid-row: 1;
-        justify-self: flex-end;
-        font-size: $default-font-size;
-
-        h5 {
-            font-weight: 400;
-            letter-spacing: .5px;
-        }
-
-        i {
-            // color: $color-primary;
-            margin-left: 1rem;
-            font-size: $font-size-huge;
-        }
-    }
-
     &__body {
         grid-column: 2;
         width: 100%;
@@ -285,7 +267,7 @@
     //GRID HEADER
     display: grid;
     grid-template-rows: 10rem;
-    grid-template-columns: 20rem 1fr;
+    grid-template-columns: 20rem 1fr max-content;
     align-items: center;
     //
 

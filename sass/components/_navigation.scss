@@ -5,8 +5,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: $font-size-small;
-        font-weight: 600;
+        font-size: $default-font-size;
+        font-weight: 400;
         letter-spacing: 0.25rem;
         text-transform: uppercase;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
@@ -98,9 +98,42 @@
 
 }
 
+.navigation__social-page{
+    display: block;
+    text-align: center;
+
+    &__link {
+        padding: 0 1rem;
+        font-size: 2.5rem;
+        color: $color-black-2;
+
+        & > i {
+            transition: all .3s;
+        }
+
+        & .fa-facebook:hover {
+            color: $color-facebook;
+        }
+
+        & .fa-instagram:hover {
+            color: $color-instagram;
+        }
+
+        & .fa-twitter-square:hover {
+            color: $color-twitter;
+        }
+
+        & .fa-discord:hover {
+            color: $color-discord;
+        }
+    }
+
+}
+
+
 .active {
     color: $color-white-1;
-    padding: .3rem .5rem;
+    padding: .2rem .4rem;
     background-color: $color-black-2;
     border-radius: .6rem;
     font-weight: 600;

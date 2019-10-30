@@ -28,55 +28,22 @@
         row-gap: 3rem;
         justify-items: center;
         text-align: center;
-        &--2 {
-            .description__item-text{
-                grid-column: 2;
-                grid-row: 1;
-            }
-
-            .description__item-box {
-                grid-column: 2;
-                grid-row: 2;
-            }
-        }
 
         & i {
-            color: #eee;
-            font-size: 10rem;
+            color: $color-white-2;
+            font-size: 7.5rem;
             padding-top: 1rem;
-            transition: all .3s;
         }
 
-        & .fa-pencil-ruler {
-            color: rgba(185, 129, 92, .5);
-            font-size: 4rem;
-            padding-top: 1rem;
-
-            &:hover {
-                color: rgb(185, 129, 92);
-            }
-        }
-
-        & .fa-code {
-            color: rgba(12, 93, 168, .5);
-            font-size: 4rem;
-            padding-top: 1rem;
-
-            &:hover {
-                color: rgb(12, 93, 168);
-            }
-        }
-
-
-        & h3 {
-            margin-top: 2rem;
-            color: #eee;
-            font-size: 2.8rem;
+        h4 {
+            color: $color-white-2;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: bold;
         }
 
         & p {
-            margin-top: 2rem;
-            color: #eee;
+            color: $color-white-3;
             font-size: 1.6rem;
         }
     }
