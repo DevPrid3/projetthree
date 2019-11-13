@@ -770,8 +770,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 600;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -820,18 +820,9 @@ body {
   text-align: center; }
   .navigation__social__link {
     padding: 0 1rem;
-    font-size: 2.5rem;
-    color: #222; }
+    font-size: 2.5rem; }
     .navigation__social__link > i {
       transition: all .3s; }
-    .navigation__social__link .fa-facebook:hover {
-      color: #3B5998; }
-    .navigation__social__link .fa-instagram:hover {
-      color: #C32AA3; }
-    .navigation__social__link .fa-twitter-square:hover {
-      color: #1da1f2; }
-    .navigation__social__link .fa-discord:hover {
-      color: #7289DA; }
 
 .navigation__social-page {
   display: block;
@@ -1038,6 +1029,7 @@ body {
   cursor: pointer;
   margin: .5rem;
   /****** EXTRA *******/
+  /****** SOCIAL BUTTON *******/
   /***** SIZE *****/ }
   .tbtn:hover {
     background-color: #f02e1c;
@@ -1045,7 +1037,7 @@ body {
   .tbtn:link, .tbtn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    transition: all .2s;
+    transition: all .1s;
     position: relative; }
   .tbtn--round {
     font-size: 16px;
@@ -1178,8 +1170,8 @@ body {
     letter-spacing: 1px;
     border: 2px solid #fc7f2d; }
     .tbtn--orange:hover {
-      background-color: #D35400;
-      border: 2px solid #D35400; }
+      background-color: #e76209;
+      border: 2px solid #e76209; }
   .tbtn-outline--orange {
     background-color: #fcfcfc;
     color: #fc7f2d;
@@ -1194,8 +1186,8 @@ body {
     letter-spacing: 1px;
     border: 2px solid #ffca39; }
     .tbtn--yellow:hover {
-      background-color: #F39C12;
-      border: 2px solid #F39C12; }
+      background-color: #ffba39;
+      border: 2px solid #ffba39; }
   .tbtn-outline--yellow {
     background-color: #fcfcfc;
     color: #ffca39;
@@ -1371,13 +1363,13 @@ body {
       background-color: transparent !important;
       color: #fc7f2d; }
       .tbtn-link--orange:hover {
-        color: #D35400; }
+        color: #e76209; }
     .tbtn-link--yellow {
       border-color: transparent !important;
       background-color: transparent !important;
       color: #ffca39; }
       .tbtn-link--yellow:hover {
-        color: #F39C12; }
+        color: #ffba39; }
     .tbtn-link--emerald {
       border-color: transparent !important;
       background-color: transparent !important;
@@ -1420,10 +1412,51 @@ body {
       color: #95A5A6; }
       .tbtn-link--grey:hover {
         color: #7F8C8D; }
+  .tbtn-outline--facebook {
+    background-color: #fcfcfc;
+    color: #3B5998;
+    letter-spacing: 1px;
+    border: 2px solid #3B5998; }
+    .tbtn-outline--facebook:hover {
+      background-color: #3B5998;
+      color: #fcfcfc; }
+  .tbtn-outline--instagram {
+    background-color: #fcfcfc;
+    color: #C32AA3;
+    letter-spacing: 1px;
+    border: 2px solid #C32AA3; }
+    .tbtn-outline--instagram:hover {
+      background-color: #C32AA3;
+      color: #fcfcfc; }
+  .tbtn-outline--github {
+    background-color: #fcfcfc;
+    color: #333;
+    letter-spacing: 1px;
+    border: 2px solid #333; }
+    .tbtn-outline--github:hover {
+      background-color: #333;
+      color: #fcfcfc; }
+  .tbtn-outline--twitter {
+    background-color: #fcfcfc;
+    color: #1da1f2;
+    letter-spacing: 1px;
+    border: 2px solid #1da1f2; }
+    .tbtn-outline--twitter:hover {
+      background-color: #1da1f2;
+      color: #fcfcfc; }
+  .tbtn-outline--discord {
+    background-color: #fcfcfc;
+    color: #7289DA;
+    letter-spacing: 1px;
+    border: 2px solid #7289DA; }
+    .tbtn-outline--discord:hover {
+      background-color: #7289DA;
+      color: #fcfcfc; }
   .tbtn--tiny {
     line-height: 1;
     font-size: 0.8rem;
-    padding: .5em 1rem; }
+    padding: .5em 1rem;
+    border: 1px solid inherit; }
   .tbtn--small {
     line-height: 1.3;
     font-size: 1.2rem;

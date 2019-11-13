@@ -24,7 +24,7 @@
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        transition: all .2s;
+        transition: all .1s;
         position: relative;
     }
 
@@ -609,13 +609,77 @@
         }
 
     }
+
+    /****** SOCIAL BUTTON *******/
+
+    &-outline--facebook {
+        background-color: $color-white-1;
+        color:  $color-facebook;
+        letter-spacing: 1px;
+        border: 2px solid  $color-facebook;
+
+        &:hover {
+            background-color: $color-facebook;
+            color: $color-white-1;
+        } 
+    }
+
+    &-outline--instagram {
+        background-color: $color-white-1;
+        color:  $color-instagram;
+        letter-spacing: 1px;
+        border: 2px solid  $color-instagram;
+
+        &:hover {
+            background-color: $color-instagram;
+            color: $color-white-1;
+        } 
+    }
+
+    &-outline--github {
+        background-color: $color-white-1;
+        color:  $color-black-3;
+        letter-spacing: 1px;
+        border: 2px solid  $color-black-3;
+
+        &:hover {
+            background-color: $color-black-3;
+            color: $color-white-1;
+        } 
+    }
     
+    &-outline--twitter {
+        background-color: $color-white-1;
+        color:  $color-twitter;
+        letter-spacing: 1px;
+        border: 2px solid  $color-twitter;
+
+        &:hover {
+            background-color: $color-twitter;
+            color: $color-white-1;
+        } 
+    }
+
+    &-outline--discord {
+        background-color: $color-white-1;
+        color:  $color-discord;
+        letter-spacing: 1px;
+        border: 2px solid  $color-discord;
+
+        &:hover {
+            background-color: $color-discord;
+            color: $color-white-1;
+        } 
+    }
+
+
     /***** SIZE *****/
 
     &--tiny {
         line-height: 1;
         font-size: $font-size-tiny;
         padding: .5em 1rem;
+        border : 1px solid inherit;
     }
     
     &--small {
