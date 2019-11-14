@@ -5,7 +5,7 @@
 
     //GRID HEADER
     display: grid;
-    grid-template-rows: max-content 10rem 50rem max-content;
+    grid-template-rows: max-content 10rem repeat(2, max-content) ;
     grid-template-columns: 10rem 1fr 10rem;
     grid-row-gap: 2rem;
     justify-items: center;
@@ -47,256 +47,86 @@
 
         //GRID
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: .5rem;
+        justify-items: center;
+        align-items: center;
         // 
 
-        &__box {
-            margin-top: 15rem;
-        }
-
-        &__tag {
-            padding-left: 5rem;
-            margin: .5rem 0;
-            display: inline-block;
-            font-family: 'Raleway', sans-serif;
-    
-            & a {
-                margin: .5rem;
-                padding: .8rem;
-                text-transform: uppercase;
-                text-decoration: none;
-                font-size: $font-size-tiny;
-                font-weight: 800;
-                background-color: rgba($color-primary-dark, 0.808);
-                color: $color-black-1;
-                border-radius: .6rem;
-                transition: all .4s;
-                letter-spacing: 0.5px;
-    
-                &:hover {
-                    background-color: $color-primary;
-                }
-            }
-        }
-
-        &__main-square {
-            background-image: url("/img/sebastian-bednarek-624108-unsplash.jpg");
-            background-size: cover;
-            background-position: center;
-            grid-row: 1 / 3;
+        &__img-box {
             grid-column: 1;
-            position: relative;
-            object-fit: cover;
-            border-radius: 5px;
-            outline-offset: 2rem;
-            backface-visibility: hidden;
-            color: $color-white;
-            padding-left: 2rem;;
-            font-family: Montserrat,sans-serif;
-            transition: all .2s;
-            cursor: pointer;
+            justify-self: right;
 
-            // FLEXBOX
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            //
-
-            &:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
-            }
-
-            &__title {
-                font-size: $font-size-mainSquare;
-                text-transform: uppercase;
-                font-weight: 800;
-            }
-
-            &__paragraph {
-                font-weight: 400;
-                font-size: $font-size-huge;
-            }
-
-            &__author {
-                border-radius: 50%;
-                height: 5rem;
-                width: 5rem;
-                position: absolute;
-                bottom: 1rem;
-                left: 1rem;
-                border: 2px solid #eee;
-                background-image: url("/img/alex-iby-286943-unsplash.jpg");
-                background-size: cover;
-                background-position: center;
-                z-index: 500;
-    
-            }
-
-            &__date-name {
-                position: absolute;
-                bottom: 1rem;
-                left: 7rem;
-                font-size: $font-size-small;
-                margin-top: 1rem;
-                font-weight: bold;
-            }
-
-            &-name {
-                color: $color-primary;
-            }
-
-            &-date {
-                color: $color-gray;
-                font-style: italic;
+            img {
+                height: 50rem;
+                width: 50rem;
             }
         }
 
-        &__square {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            color: $color-white;
-            padding-left: 1rem;
-            font-family: Montserrat,sans-serif;
-            object-fit: cover;
-            border-radius: 5px;
-            transition: all .2s;
-            // outline-offset: 2rem;
-            //backface-visibility: hidden;
-            cursor: pointer;
-            position: relative;
-
-            &:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 .5rem 1rem rgba($color-black, 0.5);
-            }
-
-            &__title {
-                font-weight: 700;
-                font-size: 1.5rem;
-                text-transform: uppercase;
-            }
-
-            &__tag {
-                margin: .5rem 0;
-                display: inline-block;
-        
-                & a {
-                    margin: .5rem;
-                    padding: .8rem;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    font-size: .6rem;
-                    font-family: 'Raleway', sans-serif;
-                    font-weight: 800;
-                    background-color: rgba($color-primary-dark, 0.808);
-                    color: $color-black-1;
-                    border-radius: .6rem;
-                    transition: all .4s;
-                    letter-spacing: 0.5px;
-        
-                    &:hover {
-                        background-color: $color-primary;
-                    }
-                }
-            }
-
-            &__date-name {
-                margin-top: 1rem;
-                font-size: 1rem;
-            }
-
-            &-name {
-                color: $color-primary;
-                font-weight: bold;
-            }
-
-            &-date {
-                color: $color-gray;
-                font-weight: bold;
-                font-style: italic;
-            }
-            
-        }
-
-        &__square-1 {
-            background-image: url("/img/mink-mingle-109837-unsplash.jpg");
-            background-size: cover;
-            background-position: center;
+        &__text-box {
             grid-column: 2;
-            grid-row: 1;    
-        }
-
-        &__square-2 {
-            background-image: url("/img/alice-moore-192521-unsplash.jpg");
-            background-size: cover;
-            background-position: center;
-            grid-column: 2;
-            grid-row: 2;    
+            justify-self: left;
         }
     }
-    
+
     &__btn {
         grid-column: 2;
     }
-}
 
-.navigation {
-    grid-column: 2;
-}
-
-.navigation__social {
-    grid-column: 2;
-    text-align: center;
-
-    &__title {
-        font-size: $font-size-small;
-        text-transform: uppercase;
+    .navigation {
+        grid-column: 2;
     }
-}
 
-.header-page {
-    
-    background-color: rgba($color-white-1, 0.5);
-    grid-column: full-start / full-end;
-    // border-bottom: 2px solid $color-gray-3;
+    .navigation__social {
+        grid-column: 2;
+        text-align: center;
 
-    //GRID HEADER
-    display: grid;
-    grid-template-rows: 10rem;
-    grid-template-columns: 20rem 1fr max-content;
-    align-items: center;
-    //
-
-    &__title {
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 0.2rem;
-        line-height: 1.2;
-        grid-row: 1 / 1;
-
-        &__full {
-            font-size: $font-size-titlePage;
-            width: auto;
-            text-align: center;
-
-            &--partone {
-                color: $color-primary;
-            }
-
-            &--parttwo {
-                color: $color-white-1;
-                padding: 0px 1.1rem;
-                background-color: $color-black-2;
-                border-radius: 1.2rem;
-            }
+        &__title {
+            font-size: $font-size-small;
+            text-transform: uppercase;
         }
+    }
 
-        > a {
-            text-decoration: none;
+    .header-page {
+        
+        background-color: rgba($color-white-1, 0.5);
+        grid-column: full-start / full-end;
+        // border-bottom: 2px solid $color-gray-3;
+
+        //GRID HEADER
+        display: grid;
+        grid-template-rows: 10rem;
+        grid-template-columns: 20rem 1fr max-content;
+        align-items: center;
+        //
+
+        &__title {
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+            line-height: 1.2;
+            grid-row: 1 / 1;
+
+            &__full {
+                font-size: $font-size-titlePage;
+                width: auto;
+                text-align: center;
+
+                &--partone {
+                    color: $color-primary;
+                }
+
+                &--parttwo {
+                    color: $color-white-1;
+                    padding: 0px 1.1rem;
+                    background-color: $color-black-2;
+                    border-radius: 1.2rem;
+                }
+            }
+
+            > a {
+                text-decoration: none;
+            }
         }
     }
 }
