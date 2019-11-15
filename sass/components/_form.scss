@@ -19,7 +19,7 @@
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
-            border-bottom: 3px solid $color-primary;
+            border-bottom: 3px solid $color-success;
         }
 
         &:focus:invalid {
@@ -30,7 +30,6 @@
             color: $color-primary;
         }
     }
-
 
     &__label {
         font-size: 1.2rem;
@@ -46,5 +45,4 @@
         visibility: hidden;
         transform: translateY(-4rem);
     }
-
 }
