@@ -12,14 +12,16 @@
 @import "components/card";
 @import "components/codingscreen";
 @import "components/composition";
-@import "layout/footer";
-@import "layout/header";
+@import "components/form";
 @import "components/navigation";
 @import "components/pagination";
 @import "components/slide";
 @import "components/tag";
 @import "components/thumbnail";
 @import "components/toolbox";
+
+@import "layout/footer";
+@import "layout/header";
 
 @import "pages/blog";
 @import "pages/components";
