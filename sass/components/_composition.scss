@@ -6,9 +6,9 @@
     padding: 2.5rem 10rem;
 
     &__draw {
-
-        grid-column: 1 / span 4;
+        grid-column: 5 / span 4;
         grid-row: 1 / span 8;
+
 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -63,10 +63,9 @@
     }
 
     &__project {
-
-        grid-column: 5 / span 4;
+        grid-column: 1 / span 4;
         grid-row: 1 / span 8;
-
+        
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(7, 5vw);

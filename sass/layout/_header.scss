@@ -63,14 +63,25 @@
             }
         }
 
-        &__text-box {
+        &__right {
+            grid-row: 1;
             grid-column: 2;
-            justify-self: left;
-        }
-    }
 
-    &__btn {
-        grid-column: 2;
+            // DISPLAY
+
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+
+            /*----------*/
+
+            &__text-box {
+                text-align: center;
+            }
+        }
+
+
     }
 
     .navigation {
@@ -87,46 +98,47 @@
         }
     }
 
-    .header-page {
-        
-        background-color: rgba($color-white-1, 0.5);
-        grid-column: full-start / full-end;
-        // border-bottom: 2px solid $color-gray-3;
+}
 
-        //GRID HEADER
-        display: grid;
-        grid-template-rows: 10rem;
-        grid-template-columns: 20rem 1fr max-content;
-        align-items: center;
-        //
+.header-page {
+    
+    background-color: rgba($color-white-1, 0.5);
+    grid-column: full-start / full-end;
+    // border-bottom: 2px solid $color-gray-3;
 
-        &__title {
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 0.2rem;
-            line-height: 1.2;
-            grid-row: 1 / 1;
+    //GRID HEADER
+    display: grid;
+    grid-template-rows: 10rem;
+    grid-template-columns: 20rem 1fr max-content;
+    align-items: center;
+    //
 
-            &__full {
-                font-size: $font-size-titlePage;
-                width: auto;
-                text-align: center;
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        line-height: 1.2;
+        grid-row: 1 / 1;
 
-                &--partone {
-                    color: $color-primary;
-                }
+        &__full {
+            font-size: $font-size-titlePage;
+            width: auto;
+            text-align: center;
 
-                &--parttwo {
-                    color: $color-white-1;
-                    padding: 0px 1.1rem;
-                    background-color: $color-black-2;
-                    border-radius: 1.2rem;
-                }
+            &--partone {
+                color: $color-primary;
             }
 
-            > a {
-                text-decoration: none;
+            &--parttwo {
+                color: $color-white-1;
+                padding: 0px 1.1rem;
+                background-color: $color-black-2;
+                border-radius: 1.2rem;
             }
+        }
+
+        > a {
+            text-decoration: none;
         }
     }
 }
